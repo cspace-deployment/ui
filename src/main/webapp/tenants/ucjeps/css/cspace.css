@@ -10,6 +10,31 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
 CollectionSpace 1.8 default CSS selectors 
 */
 
+
+/* ---------------------------------------*/
+/* Styling of HTML elements specific to the lifesci tenant */
+
+/* It may be appropriate to move these changes to a separate stylesheet. */
+
+/* Added selectors specific to Determination History repeating group (table) in Cataloging */
+/* to adjust width of table cells - rickj, 24may2011 */
+.determinationHistory .taxon {
+    width: 17% !important;}
+.determinationHistory .date-container {
+    width: 93px !important;}
+.determinationHistory .input-date {
+    width: 67px !important; padding:0;}
+.determinationHistory .input-select-shorter {
+    width: 90px !important;}
+.determinationHistory .input-select-longer {
+    width: 145px !important;}
+/*
+.input-numeric-tiny   {
+	width: 35px  !important;}
+*/
+/* ---------------------------------------*/
+
+
 /* core HTML elements*/
 html{
 	font-size: 100%;} 
@@ -554,7 +579,7 @@ table tbody.highlight tr:focus td {
 .fl-container-1024-inner {padding:0; background-color:#F0F5FB;}
 .fl-container-left {min-width:693px; width:70%;}
 .fl-container-admin   {width:100%;}
-.fl-container-pivot  {width:30%; min-width: 297px; margin-top:23px;}
+.fl-container-pivot  {width:30%; min-width: 297px; margin-top:24px;}
 .fl-container-admin-menu ul {width:100%;}
 .fl-container-admin-menu ul li{list-style-type:none; cursor:pointer; padding:2px 0 3px 5px; border:1px solid #6E9FCE; background-color:#6E9FCE; margin-bottom:4px; color:#fff; font-weight:bold;}
 .fl-container-admin-menu ul li.selected {background-color:#FFF; color:#6E9FCE;}
@@ -1403,17 +1428,15 @@ input[disabled]:hover, input[disabled]:hover	{
 
 /* hack! Need to remove controls programatically */
 
+
 .cs-togglable-header {
 	height:inherit; 
 	padding:5px 0 5px 20px; 
 	width:auto;}
-
-.cs-togglable-expanded, .cs-togglable-header {
+.cs-togglable-expanded {
 	background:transparent url('../images/toggle-less.png') no-repeat 4px 6px;}
-
 .cs-togglable-collapsed {
 	background:transparent url('../images/toggle-more.png') no-repeat 4px 6px;}
-
 .csc-related-mainheader {
 	display:inline;}
 
@@ -1739,3 +1762,16 @@ input[type=button].cs-mediaUploader-removeMedia:focus {
     margin-bottom: 10px;
     margin-right: 10px;
 }
+
+/* styling for scrollableTabs plugin */
+#stTabswrapper {
+	width:100% !important;}
+/*.stTabsInnerWrapper {
+	width:100% !important;
+	overflow-x:hidden;}
+.ui-tabs-nav {
+	overflow:visible !important;
+	height:auto !important;}*/
+.stNav {border:2px solid #6F9ECD; background-color:#fff; cursor:pointer; z-index:30; position:absolute; top:6px; height:15px;}
+.stPrev { -moz-border-radius: 6px 0 0 0;	-webkit-border-radius: 6px 0 0 0;}
+.stNext { -moz-border-radius: 0 6px 0 0;	-webkit-border-radius: 0 6px 0 0;}

@@ -216,8 +216,8 @@ cspace = cspace || {};
             uploadButton: "+ Upload",
             linkButton: "Link",
             removeButton: "Remove this media",
-            uploadMediaLabel: "Upload media",
-            linkMediaLabel: "Link To external media",
+            uploadMediaLabel: "Upload Media",
+            linkMediaLabel: "Link To External Media",
             confirmationPrimaryMessage: "Remove media from this record?",
             confirmationSecondaryMessage: "This action can not be undone. Any changes on the media handling record will also be saved automatically.",
             confirmationActText: "Remove",
@@ -297,10 +297,7 @@ cspace = cspace || {};
                     args: {
                         forceCache: true,
                         fetchClass: "fastTemplate",
-                        url: "%webapp/html/components/MediaUploaderTemplate.html",
-                        options: {
-                            dataType: "html"
-                        }
+                        url: "%webapp/html/components/MediaUploaderTemplate.html"
                     }
                 }
             }
