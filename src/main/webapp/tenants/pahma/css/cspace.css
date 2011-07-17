@@ -1,3 +1,5 @@
+/* <!-- Michael T. Black; July 16, 2011, 15:30 --> */
+
 /*
 Copyright 2010 - 2011
 
@@ -12,7 +14,7 @@ CollectionSpace 1.8 default CSS selectors
 
 
 /* ---------------------------------------*/
-/* Styling of HTML elements specific to the pahma tenant */
+/* Styling of HTML elements specific to the LifeSci tenant */
 
 /* It may be appropriate to move these changes to a separate stylesheet. */
 
@@ -30,6 +32,21 @@ CollectionSpace 1.8 default CSS selectors
     width: 145px !important;}
 .input-numeric-tiny   {
 	width: 35px  !important;}
+/* ---------------------------------------*/
+
+/* ---------------------------------------*/
+/* Styling of HTML elements specific to the PAHMA tenant */
+
+/* It may be appropriate to move these changes to a separate stylesheet. */
+
+/* Added selectors specific to Object Associations in Cataloging */
+/* to standardize widths of columns across groups - MTB, 15 July 2011 */
+/*.objectAssociation .name {
+    width: 60% !important;}
+.objectAssociation .type {
+    width: 20% !important;}
+.objectAssociation .note {
+    width: 20% !important;}*/
 /* ---------------------------------------*/
 
 
@@ -671,6 +688,15 @@ table tbody.highlight tr:focus td {
 	width:100%; 
 	float:left; 
 	border:none;}
+/* ########################################################### */
+/* THE FOLLOWING ADDED BY MICHAEL BLACK FOR STYLING INDEX.HTML */
+.info-pair .content .bullet-list {
+	float:none;}
+.info-pair .content .bullet-list .item {
+	text-indent:20px;
+	list-style-type:circle;
+	list-style-position:inside;}
+/* ########################################################### */
 .info-pair-date .content {
 	width:auto;}
 .info-pair .content > select {
