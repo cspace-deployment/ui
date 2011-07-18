@@ -370,38 +370,42 @@
                 						<div class="info-column"> <!-- NAGPRA inventory, NAGPRA applicability, NAGPRA code (legacy), Claims made for object, Cultural care notes  -->
                 							<div class="info-column fl-force-left"> 
                 								<div class="info-column2-50 fl-force-left"> <!-- NAGPRA inventory, NAGPRA applicability, NAGPRA code (legacy), Claims made for object -->
-                									<div class="info-column2-40 fl-force-left"> <!-- NAGPRA inventory -->
-                										<div class="info-pair">
-                											<div class="header">
-                												<div class="label csc-object-anthro-nagpraInventory-label">NAGPRA inventory</div> <!-- Move label to core-messages.properties  -->
+                									<!-- <div class="info-column2-50 fl-force-right"> <!-- LEFT, RIGHT -->
+                										<div class="info-column2-50 fl-force-left"> <!-- NAGPRA inventory --> <!-- LEFT -->
+                											<div class="info-pair">
+                												<div class="header">
+                													<div class="label csc-object-anthro-nagpraInventory-label">NAGPRA inventory</div> <!-- Move label to core-messages.properties  -->
+                												</div>
+                												<div class="content">
+                													<select class="csc-object-anthro-nagpra-inventory input-select"><option value="">Options not loaded</option></select> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                												</div>
                 											</div>
-                											<div class="content">
-                												<input type="text" class="csc-object-anthro-nagpra-inventory"/> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                										</div>
+                										<div class="info-column2-50 fl-force-right"> <!-- NAGPRA applicability --> <!-- RIGHT -->
+                											<div class="info-pair">
+                												<div class="header">
+                													<div class="label csc-object-anthro-nagpraApplicability-label">NAGPRA applicability</div> <!-- Move label to core-messages.properties  -->
+                												</div>
+                												<div class="content">
+                													<select class="csc-object-anthro-nagpra-applicability input-select"><option value="">Options not loaded</option></select>
+                												</div>
+                											</div>
+                										</div>
+                									<!-- </div> -->
+                									<div class="clear"></div>
+                									<div class="info-column"> <!-- LEFT, RIGHT -->
+                										<div class="info-column2-50 fl-force-left"> <!-- LEFT -->
+                											<div class="info-pair">
+                												<div class="header">
+                													<div class="label csc-object-anthro-nagpraCode-label">NAGPRA code (legacy)</div> <!-- Move label to core-messages.properties  -->
+                												</div>
+                												<div class="content">
+                													<select class="csc-object-anthro-nagpra-code input-select"><option value="">Options not loaded</option></select> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                												</div>
                 											</div>
                 										</div>
                 									</div>
-                									<div class="info-column2-40 fl-force-left"> <!-- NAGPRA applicability -->
-                										<div class="info-pair">
-                											<div class="header">
-                												<div class="label csc-object-anthro-nagpraApplicability-label">NAGPRA applicability</div> <!-- Move label to core-messages.properties  -->
-                											</div>
-                											<div class="content">
-                												<!-- ########## SHOULD BE A CONTROLLED LIST ########## -->
-                												<select class="csc-object-anthro-nagpra-applicability input-select"><option value="">Options not loaded</option></select>
-                											</div>
-                										</div>
-                									</div>
-                									<div class="info-column2-30 fl-force-left"> <!-- NAGPRA code (legacy) -->
-                										<div class="info-pair">
-                											<div class="header">
-                												<div class="label csc-object-anthro-nagpraCode-label">NAGPRA code (legacy)</div> <!-- Move label to core-messages.properties  -->
-                											</div>
-                											<div class="content">
-                												<!-- ########## SHOULD BE A CONTROLLED LIST ########## -->
-                												<select class="csc-object-anthro-nagpra-code input-select"><option value="">Options not loaded</option></select>
-                											</div>
-                										</div>
-                									</div>
+                									
                 									<div class="info-pair"> <!-- Claims made for object -->
                 										<div class="header">
                 											<div class="label csc-object-anthro-nagpraClaimsMadeGroup-label">Claims made for object</div> <!-- Move label to core-messages.properties  -->
@@ -426,14 +430,15 @@
                 											</table>
                 										</div>
                 									</div>
+                									
                 								</div>
                 								<div class="info-column2-50 fl-force-right"> <!-- Cultural care notes -->
                 									<div class="info-pair">
                 										<div class="header">
-                											<div class="label csc-object-anthro-culturalCareNotes-label">Cultural care notes</div> <!-- Move label to core-messages.properties  -->
+                											<div class="label csc-object-anthro-culturalCareNote-label">Cultural care notes</div> <!-- Move label to core-messages.properties  -->
                 										</div>
                 										<div class="content">
-                											<textarea rows="4" cols="30" class="input-textarea csc-object-anthro-cultural-care-notes"></textarea>
+                											<textarea rows="4" cols="30" class="input-textarea csc-object-anthro-cultural-care-note"></textarea>
                 										</div>
                 									</div>
                 								</div>
