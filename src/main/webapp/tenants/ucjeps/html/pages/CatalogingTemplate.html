@@ -48,26 +48,21 @@
                             <div class="info-pair">
                                 <div class="header">
                                     <div class="label">Determination History</div>
-                                    <!--
-                                        <div class="addrow">
-                                        <img src="../images/btnAddRow.png" alt="add a row" title="click to add an additional row" height=13 width=31 />
-                                        </div>
-                                    -->
-                                    <div class="clear" />
                                 </div>
                                 <div class="content">
                                     <table>
                                         <thead>
                                             <tr>
-                                                <td>Name</td>
-                                                <td>Qualifier</td>
-                                                <td>By</td>
-                                                <td>Date</td>
-                                                <td>Institution</td>
-                                                <td>Kind</td>
-                                                <td>Reference</td>
-                                                <td>Page</td>
-                                                <td>Notes</td>
+                                                <td class="csc-collection-object-taxon-label"></td>
+												<td class="csc-collection-object-qualifier-label"></td>
+												<td class="csc-collection-object-identBy-label"></td>
+												<td class="csc-collection-object-identDate-label"></td>
+												<td class="csc-collection-object-institution-label"></td>
+												<td class="csc-collection-object-identKind-label"></td>
+												<!-- Inadvertently shares label with object reference field -->
+												<td class="csc-collection-object-reference-label"></td>
+												<td class="csc-collection-object-refPage-label"></td>
+												<td class="csc-collection-object-notes-label"></td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -88,7 +83,7 @@
                                                 <td class="flc-inlineEdit-text csc-taxonomic-identification-ident-date-container date-container">
                                                     <input type="text" class="input-date csc-taxonomic-identification-ident-date csc-calendar-date" />
                                                     <!-- No <a> tag used in LoanIn...maybe the button behavior is controlled elsewhere?
-                                                        <a href="#_bottom" class="csc-calendar-button fl-table-cell disabled cs-calendar-button">-->
+                                                        <a href="#_bottom" class="csc-calendar-button fl-table-cell disabled cs-calendar-button">
                                                     <img src="../images/cal.png" alt="calendar" class="csc-calendar-button" height="17" width="16" />
                                                     <!--</a>-->
                                                     <div class="csc-date-picker cs-date-picker" />
