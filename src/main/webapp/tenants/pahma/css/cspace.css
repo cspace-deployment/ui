@@ -39,14 +39,12 @@ CollectionSpace 1.8 default CSS selectors
 
 /* It may be appropriate to move these changes to a separate stylesheet. */
 
-/* Added selectors specific to Object Associations in Cataloging */
-/* to standardize widths of columns across groups - MTB, 15 July 2011 */
-/*.objectAssociation .name {
-    width: 60% !important;}
-.objectAssociation .type {
-    width: 20% !important;}
-.objectAssociation .note {
-    width: 20% !important;}*/
+/* Added selector specific to Object Associations and Object Production */
+/* to standardize widths of columns across groups - MTB, 18 July 2011 */
+.objectAssociation .fixedwidth {
+    width: 30% !important;}
+.objectProduction .fixedwidth {
+    width: 30% !important;}
 /* ---------------------------------------*/
 
 
