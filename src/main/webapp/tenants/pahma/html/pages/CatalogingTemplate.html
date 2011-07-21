@@ -235,7 +235,52 @@
                             		</div>
                             	</div>
                             	
-                            	<!-- TAXONOMY REMOVED -->
+                            	<div class="info-column"> <!-- Taxonomic determination -->
+                            		<div class="info-pair"> 
+                            			<div class="header">
+                            				<div class="label csc-collection-object-taxonomicDeterminationHistoryGroup-label">Taxonomic determination history</div> <!-- Move label to core-messages.properties  -->
+                            			</div>
+                            			<div class="content">
+                            				<table>
+                            					<thead>
+                            						<tr>
+                            							<td class="csc-collection-object-taxonTaxon-label">Taxon</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonQualifier-label">Qualifier</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonIdentBy-label">Identified by</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonIdentDate-label">Identification date</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonInstitution-label">Institution</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonIdentKind-label">Kind</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonReference-label">Reference</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonRefPage-label">Page</td> <!-- Move label to core-messages.properties  -->
+                            							<td class="csc-collection-object-taxonNotes-label">Notes</td> <!-- Move label to core-messages.properties  -->
+                            						</tr>
+                            					</thead>
+                            					<tbody>
+                            						<tr class="csc-collection-object-taxonomicIdentGroup determinationHistory">
+                            							<td class="flc-inlineEdit-text taxon"><input type="text" class="csc-taxonomic-identification-taxon editableText" /></td>
+                            							<td class="flc-inlineEdit-text"><select class="csc-taxonomic-identification-qualifier input-select-shorter"><option value="">Options not loaded</option></select></td> <!-- Need to add options. Controlled list not showing up -->
+                            							<td class="flc-inlineEdit-text"><input type="text" class="csc-taxonomic-identification-ident-by editableText" /></td>
+                            							<!-- Based on LoansIn Authorization Date -->
+                            							<td class="flc-inlineEdit-text csc-taxonomic-identification-ident-date-container date-container">
+                            								<input type="text" class="input-date csc-taxonomic-identification-ident-date csc-calendar-date" />
+                            								<!--
+                            									<a href="#_bottom" class="csc-calendar-button fl-table-cell disabled cs-calendar-button">
+                            									<img src="../images/cal.png" alt="calendar" class="csc-calendar-button" height="17" width="16" />
+                            									</a>
+                            								-->
+                            								<div class="csc-date-picker cs-date-picker" />
+                            							</td>
+                            							<td class="flc-inlineEdit-text"><input type="text" class="csc-taxonomic-identification-institution" /></td>
+                            							<td class="flc-inlineEdit-text"><select class="csc-taxonomic-identification-ident-kind input-select-longer"><option value="">Options not loaded</option></select></td>
+                            							<td class="flc-inlineEdit-text"><input type="text" class="csc-taxonomic-identification-reference editableText" /></td>
+                            							<td class="flc-inlineEdit-text"><input type="text" class="csc-taxonomic-identification-reference-page editableText input-numeric-tiny" /></td>
+                            							<td class="flc-inlineEdit-text"><input type="text" class="csc-taxonomic-identification-notes editableText" /></td>
+                            						</tr>
+                            					</tbody>
+                            				</table>
+                            			</div>
+                            		</div>
+                            	</div>
                             	
                             	<div class="info-column" id="multipleEdit"> <!-- Object title, Object name -->
                                 	<div class="info-pair"> <!-- Object title -->
@@ -372,7 +417,134 @@
                 		</div>
                 	</div>
                 	
-                	<!-- REPATRIATION REMOVED -->
+                	<div class="fl-container-flex fl-fix information-group"> <!-- Repatriation and Cultural Sensitivity Information -->
+                		<div class="info-column">
+                			<div class="csc-recordEditor-header fl-container-flex header toggle csc-object-anthro-repatriationInformation-label">Repatriation and Cultural Sensitivity Information</div> <!-- Move label to core-messages.properties  -->
+                			<div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
+                				<div class="info-column fl-force-left">
+                					<div class="info-column"> <!-- NAGPRA inventory, NAGPRA applicability, NAGPRA code (legacy), Cultural care notes, Claims made for object, NAGPRA cultural determination, Access restrictions -->
+                						<div class="info-column"> <!-- NAGPRA inventory, NAGPRA applicability, NAGPRA code (legacy), Claims made for object, Cultural care notes  -->
+                							<div class="info-column fl-force-left"> 
+                								<div class="info-column2-50 fl-force-left"> <!-- NAGPRA inventory, NAGPRA applicability, NAGPRA code (legacy), Claims made for object -->
+                									<!-- <div class="info-column2-50 fl-force-right"> --> <!-- LEFT, RIGHT -->
+                									<div class="info-column2-50 fl-force-left"> <!-- NAGPRA inventory --> <!-- LEFT -->
+                										<div class="info-pair">
+                											<div class="header">
+                												<div class="label csc-object-anthro-nagpraInventory-label">NAGPRA inventory</div> <!-- Move label to core-messages.properties  -->
+                											</div>
+                											<div class="content">
+                												<select class="csc-nagpra-inventory-name input-select"><option value="">Options not loaded</option></select> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                											</div>
+                										</div>
+                									</div>
+                									<div class="info-column2-50 fl-force-right"> <!-- NAGPRA applicability --> <!-- RIGHT -->
+                										<div class="info-pair">
+                											<div class="header">
+                												<div class="label csc-object-anthro-nagpraApplicability-label">NAGPRA applicability</div> <!-- Move label to core-messages.properties  -->
+                											</div>
+                											<div class="content">
+                												<select class="csc-nagpra-applicability input-select"><option value="">Options not loaded</option></select>
+                											</div>
+                										</div>
+                									</div>
+                									<!-- </div> -->
+                									<div class="clear"></div>
+                									<div class="info-column"> <!-- LEFT, RIGHT -->
+                										<div class="info-column2-50 fl-force-left"> <!-- LEFT -->
+                											<div class="info-pair">
+                												<div class="header">
+                													<div class="label csc-object-anthro-nagpraCode-label">NAGPRA code (legacy)</div> <!-- Move label to core-messages.properties  -->
+                												</div>
+                												<div class="content">
+                													<select class="csc-pahma-nagpra-code-legacy input-select"><option value="">Options not loaded</option></select> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                												</div>
+                											</div>
+                										</div>
+                									</div>
+                									
+                									<div class="info-pair"> <!-- Claims made for object -->
+                										<div class="header">
+                											<div class="label csc-object-anthro-nagpraClaimsMadeGroup-label">Claims made for object</div> <!-- Move label to core-messages.properties  -->
+                										</div>
+                										<div class="content">
+                											<table>
+                												<thead>
+                													<tr>
+                														<!--<td class="table-select"></td>-->
+                														<td class="csc-object-anthro-nagpraClaimName-label">Name of claim</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-nagpraClaimStatus-label">Status</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-nagpraClaimNote-label">Note</td> <!-- Move label to core-messages.properties  -->
+                													</tr>
+                												</thead>
+                												<tbody>
+                													<tr class="csc-object-anthro-nagpraClaimsGroup">
+                														<td><input type="text" class="csc-nagpra-claim-name"/></td>
+                														<td><select class="csc-nagpra-claim-status input-select"><option value="">Options not loaded</option></select></td>
+                														<td><input type="text" class="csc-nagpra-claim-note"/></td>
+                													</tr>
+                												</tbody>
+                											</table>
+                										</div>
+                									</div>
+                									
+                								</div>
+                								<div class="info-column2-50 fl-force-right"> <!-- Cultural care notes -->
+                									<div class="info-pair">
+                										<div class="header">
+                											<div class="label csc-object-anthro-culturalCareNote-label">Cultural care notes</div> <!-- Move label to core-messages.properties  -->
+                										</div>
+                										<div class="content">
+                											<textarea rows="4" cols="30" class="input-textarea csc-object-anthro-cultural-care-note"></textarea>
+                										</div>
+                									</div>
+                									<div class="info-pair">
+                										<div class="header">
+                											<div class="label csc-object-anthro-nagpraCulturalDetermination-label">NAGPRA cultural determination</div> <!-- Move label to core-messages.properties  -->
+                										</div>
+                										<div class="content">
+                											<textarea rows="4" cols="30" class="input-textarea csc-object-anthro-nagpra-cultural-determination"></textarea>
+                										</div>
+                									</div>
+                								</div>
+                								<div class="clear"></div>
+                								<div class="info-column fl-force-left"> <!-- Access Recommendations and Restrictions -->
+                									<div class="info-pair">
+                										<div class="header">
+                											<div class="label csc-object-anthro-accessRestrictionRecommendationsGroup-label">Access restrictions and recommendations</div> <!-- Move label to core-messages.properties  -->
+                										</div>
+                										<div class="content">
+                											<table>
+                												<thead>
+                													<tr>
+                														<!--<td class="table-select"></td>-->
+                														<td class="csc-object-anthro-accessRestrictionRecommendationType-label">Type of recommendation or restriction</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-accessRestrictionRecommendationDetails-label">Details</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-accessRestrictionRecommendationRequestor-label">Requestor (person)</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-accessRestrictionRecommendationOnBehalfOf-label">On behalf of (organization)</td> <!-- Move label to core-messages.properties  -->
+                														<td class="csc-object-anthro-accessRestrictionRecommendationDate-label">Date</td> <!-- Move label to core-messages.properties  -->
+                													</tr>
+                												</thead>
+                												<tbody>
+                													<tr class="csc-object-anthro-accessRestrictionRecommendationsGroup">
+                														<td><select class="csc-object-anthro-access-restriction-type input-select"><option value="">Options not loaded</option></select></td>
+                														<td><input type="text" class="csc-object-anthro-access-restriction-details"/></td>
+                														<td><input type="text" class="csc-object-anthro-access-restriction-requestor"/></td> 
+                														<td><input type="text" class="csc-object-anthro-access-restriction-on-behalf-of"/></td>
+                														<td><input type="text" class="csc-object-anthro-access-restriction-date"/></td> 
+                													</tr>
+                												</tbody>
+                											</table>
+                										</div>
+                									</div>
+                								</div>
+                							</div>
+                						</div>
+                					</div>
+                				</div>
+                				<div class="clear"></div>
+                			</div>
+                		</div>
+                	</div>
                 	
                 	<div class="fl-container-flex fl-fix information-group"> <!-- Object Description Information -->
                         <div class="info-column">
