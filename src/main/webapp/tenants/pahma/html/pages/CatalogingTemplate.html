@@ -270,14 +270,13 @@
                             					</thead>
                             					<tbody>
                             						<tr class="csc-collection-object-dimensionGroup">
-                            							<td><select class="csc-object-description-dimension-part input-select"><option value="">Options not loaded</option></select></td>
+                            							<!--<td><select class="csc-object-description-dimension-part input-select"><option value="">Options not loaded</option></select></td>-->
+                            							<td><input type="text" class="csc-object-description-dimension-part"/></td>
                             							<td><select class="csc-object-description-dimension input-select"><option value="">Options not loaded</option></select></td>
                             							<td><input type="text" class="csc-object-description-dimension-value"/></td>
                             							<td><select class="csc-object-description-dimension-unit input-select"><option value="">Options not loaded</option></select></td>
                             							<td><input type="text" class="csc-object-description-dimension-value-qualifier"/></td>
-                            							<td>
-                            								<input type="text" class="csc-object-description-dimension-value-date" />
-                            							</td>
+                            							<td><input type="text" class="csc-object-description-dimension-value-date"/></td>
                             						</tr>
                             					</tbody>
                             				</table>
@@ -641,14 +640,24 @@
                                         </div>
                                     </div>
                                     
-                                	<div class="info-pair"> <!-- Object status -->
-                                        <div class="header">
-                                            <div class="label csc-collection-object-objectStatus-label"></div>
-                                        </div>
-                                        <div class="content">
-                                            <select class="csc-object-description-object-status input-select"><option value="">Options not loaded</option></select>
-                                        </div>
-                                    </div>
+                                	<div class="info-column objectCollection">
+                                		<div class="info-pair fl-force-left"> <!-- Object status -->
+	                                        <div class="header">
+	                                            <div class="label csc-collection-object-objectStatus-label"></div>
+	                                        </div>
+                                			<div class="content fixedwidth80">
+	                                        	<select class="csc-object-description-object-status input-select fixedfield50"><option value="">Options not loaded</option></select>
+	                                        </div>
+	                                	</div>
+                                		<div class="info-pair fl-force-right"> <!-- Form as stored -->
+                                			<div class="header">
+                                				<div class="label csc-collection-object-forms-label"></div>
+                                			</div>
+                                			<div class="content fixedwidth80">
+                                				<select class="csc-object-description-form input-select fixedfield50"><option value="">Options not loaded</option></select>
+                                			</div>
+                                		</div>
+                                	</div>
                                     
                                 	<div class="info-pair"> <!-- Sex determination -->
                                         <div class="header">
@@ -668,16 +677,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="info-column"> <!-- Form -->
-                                        <div class="info-pair">
-                                            <div class="header">
-                                                <div class="label csc-collection-object-forms-label"></div>
-                                            </div>
-                                            <div class="content">
-                                                <select class="csc-object-description-form input-select"><option value="">Options not loaded</option></select>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 
                                 <div class="info-column2-50 fl-force-right"> <!-- Edition number, Age estimate, Style, Color -->
