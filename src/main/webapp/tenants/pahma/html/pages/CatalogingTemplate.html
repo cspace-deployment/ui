@@ -113,58 +113,141 @@
                             			</div>
                             		</div>
                                     <div class="clear"></div>
-                                	<div class="info-column2-50 fl-force-left"> <!-- Department, Collection, Record status -->
-                                        
-                                    	<div class="info-pair-select"> <!-- Department -->
-                                            <div class="header">
-                                                <div class="label csc-collection-object-responsibleDepartments-label"></div>
-                                            </div>
-                                            <div class="content">
-                                                <select class="csc-object-identification-responsible-department input-select"><option value="">Options not loaded</option></select>
-                                            </div>
-                                        </div>
-                                        
-                                    	<div class="info-pair-select"> <!-- Collection -->
-                                            <div class="header">
-                                                <div class="label csc-collection-object-collection-label"></div>
-                                            </div>
-                                            <div class="content">
-                                                <select class="csc-object-identification-collection input-select"><option value="">Options not loaded</option></select>
-                                            </div>
-                                        </div>
-                                        
-                                    	<div class="info-pair-select"> <!-- Record status -->
-                                            <div class="header">
-                                                <div class="label csc-collection-object-recordStatus-label"></div>
-                                            </div>
-                                            <div class="content">
-                                                <select class="csc-object-identification-record-status input-select"><option value="">Options not loaded</option></select>
-                                            </div>
-                                        </div>
+                                	
+                            		<div class="info-column fl-force-left objectInformation"> <!-- Department, Collection, File code, Cataloging status -->
+                            			<div class="info-column2-25 fl-force-left fixedfield"> <!-- Department -->
+	                                    	<div class="info-pair-select">
+	                                            <div class="header">
+	                                                <div class="label csc-collection-object-responsibleDepartments-label"></div>
+	                                            </div>
+	                                    		<div class="content">
+	                                    			<select class="csc-object-identification-responsible-department input-select fixedwidth"><option value="">Options not loaded</option></select>
+	                                            </div>
+	                                    	</div>
+                            			</div>
+                            			<div class="info-column2-25 fl-force-left fixedfield"> <!-- Collection -->
+	                                    	<div class="info-pair-select">
+	                                            <div class="header">
+	                                                <div class="label csc-collection-object-collection-label"></div>
+	                                            </div>
+	                                    		<div class="content">
+	                                    			<select class="csc-object-identification-collection input-select fixedwidth"><option value="">Options not loaded</option></select>
+	                                            </div>
+	                                    	</div>
+                            			</div>
+                            			<div class="info-column2-25 fl-force-left fixedfield"> <!-- Ethnographic file code -->
+	                            			<div class="info-pair-select">
+	                            				<div class="header">
+	                            					<div class="label csc-object-identification-pahma-file-code-label">Ethnographic file code</div> <!-- Move label to core-messages.properties  -->
+	                            				</div>
+	                            				<div class="content">
+	                            					<select class="csc-object-identification-pahma-file-code input-select fixedwidth"><option value="">Options not loaded</option></select>
+	                            				</div>
+	                            			</div>
+                            			</div>
+                            			<div class="info-column2-25 fl-force-left fixedfield"> <!-- Cataloging status -->
+	                                    	<div class="info-pair-select">
+	                                            <div class="header">
+	                                                <div class="label csc-collection-object-recordStatus-label"></div>
+	                                            </div>
+	                                    		<div class="content">
+	                                    			<select class="csc-object-identification-record-status input-select fixedwidth"><option value="">Options not loaded</option></select>
+	                                            </div>
+	                                    	</div>
+                            			</div>
                                         <div class="clear"></div>
                                     </div>
-                                    
-                                	<div class="info-column2-50 fl-force-right"> <!-- Distinguishing features, Comments -->
-                                    	<div class="info-pair"> <!-- Comments -->
-                                            <div class="header">
-                                                <div class="label csc-collection-object-comments-label"></div>
-                                            </div>
-                                            <div class="content">
-                                                <textarea rows="4" cols="30" class="input-textarea csc-object-identification-comments"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            	<div class="info-column2-50 fl-force-left"> <!-- Dimension summary -->
-                            		<div class="info-pair">
-                            			<div class="header">
-                            				<div class="label csc-collection-object-dimensionSummary-label"></div>
-                            			</div>
-                            			<div class="content">
-                            				<input type="text" class="csc-collection-object-dimensionSummary"/>
-                            			</div>
+                            		
+                            		<div class="info-column fl-force-left"> <!-- Associated cultural group, Associated place, Dimension summary, Comments, Context of use -->
+                            			<div class="info-column2-50 fl-force-left"> <!-- Associated cultural group, Associated place, Dimension summary -->
+	                            			<div class="info-pair"> <!-- Associated cultural group -->
+	                            				<div class="info-column fl-force-left">
+	                            					<div class="info-column">
+	                            						<div class="header">
+	                            							<div class="label csc-collection-object-assocPeopleGroup-label"></div>
+	                            						</div>
+	                            						<div class="content">
+	                            							<table>
+	                            								<thead>
+	                            									<tr class="objectAssociation">
+	                            										<td class="csc-collection-object-assocPeople-label"></td>
+	                            										<td class="csc-collection-object-assocPeopleType-label fixedwidth"></td>
+	                            										<td class="csc-collection-object-assocPeopleNote-label fixedwidth"></td>
+	                            									</tr>
+	                            								</thead>
+	                            								<tbody>
+	                            									<tr class="csc-collection-object-assocPeopleGroup">
+	                            										<td><input type="text" class="csc-collection-object-assocPeople"/></td>
+	                            										<td><select class="csc-collection-object-assocPeopleType input-select"><option value="">Options not loaded</option></select></td>
+	                            										<td><input type="text" class="csc-collection-object-assocPeopleNote"/></td>
+	                            									</tr>
+	                            								</tbody>
+	                            							</table>
+	                            						</div>
+	                            					</div>
+	                            				</div>
+	                            			</div>
+	                            			
+	                            			<div class="info-pair"> <!-- Associated place -->
+	                            				<div class="info-column fl-force-left">
+	                            					<div class="info-column">
+	                            						<div class="header">
+	                            							<div class="label csc-collection-object-assocPlaceGroup-label"></div>
+	                            						</div>
+	                            						<div class="content">
+	                            							<table>
+	                            								<thead>
+	                            									<tr class="objectAssociation">
+	                            										<td class="csc-collection-object-assocPlace-label"></td>
+	                            										<td class="csc-collection-object-assocPlaceType-label fixedwidth"></td>
+	                            										<td class="csc-collection-object-assocPlaceNote-label fixedwidth"></td>
+	                            									</tr>
+	                            								</thead>
+	                            								<tbody>
+	                            									<tr class="csc-collection-object-assocPlaceGroup">
+	                            										<td class="name"><input type="text" class="csc-collection-object-assocPlace"/></td>
+	                            										<td class="status"><select class="csc-collection-object-assocPlaceType input-select"><option value="">Options not loaded</option></select></td>
+	                            										<td class="note"><input type="text" class="csc-collection-object-assocPlaceNote"/></td>
+	                            									</tr>
+	                            								</tbody>
+	                            							</table>
+	                            						</div>
+	                            					</div>
+	                            				</div>
+	                            			</div>
+	                            			
+	                            			<!--<div class="info-column2-50 fl-force-left"> -->
+	                            				<div class="info-pair"> <!-- Dimension summary -->
+	                            					<div class="header">
+	                            						<div class="label csc-collection-object-dimensionSummary-label"></div>
+	                            					</div>
+	                            					<div class="content">
+	                            						<input type="text" class="csc-collection-object-dimensionSummary"/>
+	                            					</div>
+	                            				</div>
+	                            			<!--</div>-->
+	                            		</div>
+                            		
+	                            		<div class="info-column2-50 fl-force-right"> <!-- Comments, Context of use -->
+	                            			<div class="info-pair"> <!-- Comments -->
+	                            				<div class="header">
+	                            					<div class="label csc-collection-object-comments-label"></div>
+	                            				</div>
+	                            				<div class="content">
+	                            					<textarea rows="4" cols="30" class="input-textarea csc-object-identification-comments"></textarea>
+	                            				</div>
+	                            			</div>
+	                            			<div class="info-pair"> <!-- Context of use -->
+	                            				<div class="header">
+	                            					<div class="label csc-collection-object-anthroContextOfUse-label">Context of use</div> <!-- Move label to core-messages.properties  -->
+	                            				</div>
+	                            				<div class="content">
+	                            					<textarea rows="3" cols="35" class="input-textarea csc-anthro-context-of-use"></textarea>
+	                            				</div>
+	                            			</div>
+	                                        <!--<div class="clear"></div>-->
+	                                    </div>
+                                    	<div class="clear"></div>
                             		</div>
                             	</div>
                             	
@@ -324,19 +407,27 @@
                 		<div class="info-column">
                 			<div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-objectCollectionInformation-label"></div>
                 			<div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
-                				<div class="info-column fl-force-left">
-                					<div class="info-column2-50 fl-force-left"> <!-- Field collection date -->
-                						<div class="info-pair">
+                				<div class="info-column fl-force-left objectCollection"> <!-- Field collection date, Field collection method, Field collection place -->
+                					<div class="info-column2-50 fl-force-left">
+                						<div class="info-pair fixedfield50"> <!-- Field collection date -->
                 							<div class="header">
                 								<div class="label csc-collection-object-fieldCollectionDate-label"></div>
                 							</div>
                 							<div class="content">
-                								<input type="text" class="csc-collection-object-fieldCollectionDate" />
+                								<input type="text" class="csc-collection-object-fieldCollectionDate fixedwidth" />
+                							</div>
+                						</div>
+                						<div class="info-pair fixedfield50"> <!-- Field collection method -->
+                							<div class="header">
+                								<div class="label csc-collection-object-fieldCollectionMethods-label"></div>
+                							</div>
+                							<div class="content">
+                								<select class="input-select csc-collection-object-fieldCollectionMethod fixedwidth"><option value="">Options not loaded</option></select>
                 							</div>
                 						</div>
                 					</div>
                 					<div class="info-column2-50 fl-force-right"> <!-- Field collection place -->
-                						<div class="info-pair">
+                						<div class="info-pair fixedfield90">
                 							<div class="header">
                 								<div class="label csc-collection-object-fieldCollectionPlace-label"></div>
                 							</div>                            
@@ -346,49 +437,41 @@
                 						</div>
                 					</div>
                 				</div>
-                				<div class="info-column fl-force-left">
-                					<div class="info-column2-50 fl-force-left"> <!-- Field collection method -->
-                						<div class="info-pair">
-                							<div class="header">
-                								<div class="label csc-collection-object-fieldCollectionMethods-label"></div>
+                				<div class="info-column fl-force-left"> <!-- Field collection note, Field collection source -->
+                					<div class="info-column fl-force-left">
+                						<div class="info-column2-50 fl-force-left"> <!-- Field collection note -->
+                							<div class="info-pair">
+                								<div class="header">
+                									<div class="label csc-collection-object-fieldCollectionNote-label"></div>
+                								</div>
+                								<div class="content">
+                									<textarea rows="4" cols="30" class="input-textarea csc-collection-object-fieldCollectionNote"></textarea>
+                								</div>
                 							</div>
-                							<div class="content">
-                								<select class="input-select csc-collection-object-fieldCollectionMethod"><option value="">Options not loaded</option></select>
-                							</div>
+	                					</div>
+                						<div class="info-column2-50 fl-force-right"> <!-- Field collection source -->
+	                						<div class="info-pair">
+	                							<div class="header">
+	                								<div class="label csc-collection-object-fieldCollectionSources-label"></div>
+	                							</div>                            
+	                							<div class="content">
+	                								<input type="text" class="input-alpha csc-collection-object-fieldCollectionSource" />
+	                							</div>
+	                						</div>
                 						</div>
-                					</div>
-                					<div class="info-column2-50 fl-force-right"> <!-- Field collection source -->
-                						<div class="info-pair">
-                							<div class="header">
-                								<div class="label csc-collection-object-fieldCollectionSources-label"></div>
-                							</div>                            
-                							<div class="content">
-                								<input type="text" class="input-alpha csc-collection-object-fieldCollectionSource" />
+                						<div class="info-column2-50 fl-force-right"> <!-- Field collector -->
+                							<div class="info-pair">
+                								<div class="header">
+                									<div class="label csc-collection-object-fieldCollectors-label"></div>
+                								</div>                            
+                								<div class="content">
+                									<input type="text" class="input-alpha csc-collection-object-fieldCollector" />
+                								</div>
                 							</div>
                 						</div>
                 					</div>
                 				</div>
-                				<div class="info-column fl-force-left">
-                					<div class="info-column2-50 fl-force-left"> <!-- Field collection note -->
-                						<div class="info-pair">
-                							<div class="header">
-                								<div class="label csc-collection-object-fieldCollectionNote-label"></div>
-                							</div>
-                							<div class="content">
-                								<textarea rows="4" cols="30" class="input-textarea csc-collection-object-fieldCollectionNote"></textarea>
-                							</div>
-                						</div>
-                					</div>
-                					<div class="info-column2-50 fl-force-right"> <!-- Field collector -->
-                						<div class="info-pair">
-                							<div class="header">
-                								<div class="label csc-collection-object-fieldCollectors-label"></div>
-                							</div>                            
-                							<div class="content">
-                								<input type="text" class="input-alpha csc-collection-object-fieldCollector" />
-                							</div>
-                						</div>
-                					</div>
+                				<div class="info-column fl-force-left"> <!-- Field collection note, Field collector, Field collection event name -->
                 					<div class="info-column2-50 fl-force-right"> <!-- Field collection event name -->
                 						<div class="info-pair">
                 							<div class="header">
@@ -399,8 +482,6 @@
                 							</div>
                 						</div>
                 					</div>
-                				</div>
-                				<div class="info-column fl-force-left">
                 					<div class="info-column2-50 fl-force-left"> <!-- Field collection number -->
                 						<div class="info-pair">
                 							<div class="header">
@@ -486,8 +567,8 @@
                 											</table>
                 										</div>
                 									</div>
-                									
                 								</div>
+                								
                 								<div class="info-column2-50 fl-force-right"> <!-- Cultural care notes -->
                 									<div class="info-pair">
                 										<div class="header">
@@ -1447,33 +1528,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                	<div class="info-pair"> <!-- Associated cultural group -->
-                                                        <div class="info-column fl-force-left">
-                                                            <div class="info-column">
-                                                                <div class="header">
-                                                                    <div class="label csc-collection-object-assocPeopleGroup-label"></div>
-                                                                </div>
-                                                                <div class="content">
-                                                                    <table>
-                                                                        <thead>
-                                                                        	<tr class="objectAssociation">
-                                                                        		<td class="csc-collection-object-assocPeople-label"></td>
-                                                                        		<td class="csc-collection-object-assocPeopleType-label fixedwidth"></td>
-                                                                        		<td class="csc-collection-object-assocPeopleNote-label fixedwidth"></td>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr class="csc-collection-object-assocPeopleGroup">
-                                                                                <td><input type="text" class="csc-collection-object-assocPeople"/></td>
-                                                                                <td><select class="csc-collection-object-assocPeopleType input-select"><option value="">Options not loaded</option></select></td>
-                                                                                <td><input type="text" class="csc-collection-object-assocPeopleNote"/></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                	<!-- REMOVED CULTURAL GROUP -->
                                                 	<div class="info-pair"> <!-- Associated person -->
                                                         <div class="info-column fl-force-left">
                                                             <div class="info-column">
@@ -1500,34 +1555,10 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                	<div class="info-pair"> <!-- Associated place -->
-                                                        <div class="info-column fl-force-left">
-                                                            <div class="info-column">
-                                                                <div class="header">
-                                                                    <div class="label csc-collection-object-assocPlaceGroup-label"></div>
-                                                                </div>
-                                                                <div class="content">
-                                                                    <table>
-                                                                        <thead>
-                                                                        	<tr class="objectAssociation">
-                                                                                <td class="csc-collection-object-assocPlace-label"></td>
-                                                                        		<td class="csc-collection-object-assocPlaceType-label fixedwidth"></td>
-                                                                        		<td class="csc-collection-object-assocPlaceNote-label fixedwidth"></td>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        	<tr class="csc-collection-object-assocPlaceGroup">
-                                                                                <td class="name"><input type="text" class="csc-collection-object-assocPlace"/></td>
-                                                                                <td class="status"><select class="csc-collection-object-assocPlaceType input-select"><option value="">Options not loaded</option></select></td>
-                                                                        		<td class="note"><input type="text" class="csc-collection-object-assocPlaceNote"/></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                	</div>
+                                                	
+                                                	<!-- REMOVED ASSOCIATED PLACE -->
+                                                	
                                                     <div class="clear"></div>
                                                 </div>
                                                 

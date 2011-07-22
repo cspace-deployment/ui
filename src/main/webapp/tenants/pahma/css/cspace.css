@@ -45,6 +45,18 @@ CollectionSpace 1.8 default CSS selectors
     width: 30% !important;}
 .objectProduction .fixedwidth {
     width: 30% !important;}
+.objectInformation .fixedfield {
+    width: 25% !important;}
+.objectInformation .fixedwidth {
+    width: 80% !important;}
+.objectCollection .fixedfield20 {
+    width: 20% !important;}
+.objectCollection .fixedfield50 {
+    width: 50% !important;}
+.objectCollection .fixedfield90 {
+    width: 90% !important;}
+.objectCollection .fixedwidth {
+    width: 80% !important;}
 /* ---------------------------------------*/
 
 
