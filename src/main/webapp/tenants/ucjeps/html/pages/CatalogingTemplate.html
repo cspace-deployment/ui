@@ -227,46 +227,46 @@
                         </div>
                         
                         <div class="info-column" id="multipleEdit">
-                            <!-- replace this with Type Specimen group -->
+                            <!-- replaced Title fieldgroup with Type Specimen fieldgroup, 19July2011 -->
                             <div class="info-pair">
                                 <div class="header">
-                                    <div class="label">Title</div>
-                                    <!--<div class="addrow"><img src="../images/btnAddRow.png" alt="add a row" title="click to add an additional row" height=13 width=31 /></div>-->
-                                    <div class="clear" />
+                                    <div class="label csc-collection-object-ucjepsTypeSpecimenGroup-label" />
                                 </div>
                                 <div class="content">
                                     <table>
                                         <thead>
                                             <tr>
-                                                <td>Title</td>
-                                                <td>Title Language</td>
-                                                <td>Title Translation</td>
-                                                <td>Title Translation Language</td>
-                                                <td>Title Type</td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenKindOfType-label"></td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenReference-label"></td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenRefPage-label"></td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenInstitution-label"></td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenInstitutionType-label"></td>
+                                                <td class="csc-collection-object-ucjepsTypeSpecimenNotes-label"></td>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="csc-collection-object-titleGroup">
-                                                <td class="flc-inlineEdit-text" style="width:45%;">
-                                                    <input type="text" class="csc-object-identification-object-title editableText" />
+                                            <tr class="csc-collection-object-ucjepsTypeSpecimenGroup">
+                                                <td class="flc-inlineEdit-text">
+                                                    <select class="csc-object-identification-object-ucjepsTypeSpecimenKindOfType input-select">
+                                                    <option value="">Options not loaded</option>
+                                                </select>
                                                 </td>
                                                 <td class="flc-inlineEdit-text">
-                                                    <select class="csc-object-identification-object-title-language input-select">
-                                                        <option value="">Options not loaded</option>
-                                                    </select>
+                                                    <input type="text" class="csc-object-identification-object-ucjepsTypeSpecimenReference editableText" />
                                                 </td>
                                                 <td class="flc-inlineEdit-text">
-                                                    <input type="text" class="csc-object-identification-object-title-translation editableText" />
+                                                    <input type="text" class="csc-object-identification-object-ucjepsTypeSpecimenRefPage editableText" />
                                                 </td>
                                                 <td class="flc-inlineEdit-text">
-                                                    <select class="csc-collection-object-titleTranslationLanguage input-select">
-                                                        <option value="">Options not loaded</option>
-                                                    </select>
+                                                    <input type="text" class="csc-object-identification-object-ucjepsTypeSpecimenInstitution editableText" />
                                                 </td>
                                                 <td class="flc-inlineEdit-text">
-                                                    <select class="csc-object-identification-object-title-type input-select">
-                                                        <option value="">Options not loaded</option>
-                                                    </select>
+                                                    <select class="csc-object-identification-object-ucjepsTypeSpecimenInstitutionType input-select">
+                                                    <option value="">Options not loaded</option>
+                                                	</select>
+                                                </td>
+                                                <td class="flc-inlineEdit-text">
+                                                    <input type="text" class="csc-object-identification-object-ucjepsTypeSpecimenNotes editableText" />
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -495,47 +495,54 @@
                         </div>
 
                         <!-- Row seven -->
-                        <div class="info-column fl-force-left">
-                            <div class="info-column2-50 fl-force-left">
+                        <!-- Hidden for UCJEPS -->
+                        <!-- <div class="info-column fl-force-left">
+                            <div class="info-column2-50 fl-force-left"> -->
                                 <!-- Field Collection Event Name  -->
-                                <div class="info-pair">
-                                    <div class="header">
+                                <!-- Continue hidings, around existing comments... -->
+                                <!-- <div class="info-pair">
+                                    <div class="header"> -->
                                         <!--
                                         <div class="label csc-collection-object-fieldColEventName-label" />
                                         -->
-                                        <div class="label">Event Name</div>
+                                        <!--<div class="label">Event Name</div>
                                     </div>
                                     <div class="content">
                                         <input type="text" class="input-alpha csc-collection-object-fieldColEventName" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="info-column2-50 fl-force-right">
+                            <div class="info-column2-50 fl-force-right"> -->
                                 <!-- Place holder for DEPTH -->
-                                <div class="info-pair">
-                                    <div class="header">
+                                <!-- Continue hiding... -->
+                                	<!--<div class="info-pair">-->
+                                    <!-- <div class="header"> -->
                                         <!--
                                         <div class="label csc-collection-object-fieldLocDepth-label" />
                                         -->
-                                        <div class="label">Depth</div>
+                                       <!-- more hiding... -->
+                                       <!-- <div class="label">Depth</div>
                                     </div>
                                     <div class="content">
                                         <input type="text" class="input-alpha csc-collection-object-fieldLocDepth" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Row eight -->
-                        <div class="info-column fl-force-left">
-                            <div class="info-column2-50 fl-force-left">
+                        <!-- Hidden for UCJEPS -->
+                        <!-- <div class="info-column fl-force-left">
+                            <div class="info-column2-50 fl-force-left"> -->
                                 <!-- Place holder for Associated TAXA -->
-                                <div class="info-pair">
-                                    <div class="header">
+                                <!-- Continue hiding -->
+                                <!-- <div class="info-pair">
+                                    <div class="header"> -->
                                         <!--
                                         <div class="label csc-collection-object-fieldAssociatedTaxa-label" />
                                         -->
-                                        <div class="label">Associated Taxa</div>
+                                        <!-- Continue... -->
+                                        <!-- <div class="label">Associated Taxa</div>
                                     </div>
                                     <div class="content">
                                         <input type="text" class="input-alpha csc-collection-object-fieldAssociatedTaxa" />
@@ -543,23 +550,24 @@
                                 </div>
                             </div>
 
-                            <div class="info-column2-50 fl-force-right">
+                            <div class="info-column2-50 fl-force-right"> -->
                                 <!-- Place holder for Elevation -->
-                                <div class="info-pair">
-                                    <div class="header">
+                                <!-- More... -->
+                                <!-- <div class="info-pair">
+                                    <div class="header"> -->
                                         <!--
                                         <div class="label csc-collection-object-fieldLocElevation-label" />
                                         -->
-                                        <div class="label">Elevation</div>
+                                        <!-- <div class="label">Elevation</div>
                                     </div>
                                     <div class="content">
                                         <input type="text" class="input-alpha csc-collection-object-fieldLocElevation" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="clear" />
+                        </div> -->
+                        <!-- End hiding, for this information group -->
+                    <div class="clear" />
                     </div>
                 </div>
             </div>
@@ -570,7 +578,8 @@
                                 csc-collection-object-descriptionInformation-label" />
                     <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
                         <div class="info-column2-50 fl-force-left">
-                            <div class="info-pair">
+                        <!-- Hidden for UCJEPS -->
+                        	<!--<div class="info-pair">
                                 <div class="header">
                                     <div class="label csc-collection-object-copyNumber-label" />
                                 </div>
@@ -588,7 +597,7 @@
                                         <option value="">Options not loaded</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="info-pair">
                                 <div class="header">
@@ -614,7 +623,8 @@
                         </div>
 
                         <div class="info-column2-50 fl-force-right">
-                            <div class="info-pair">
+                        <!-- Hidden for UCJEPS -->    
+                            <!--<div class="info-pair">
                                 <div class="header">
                                     <div class="label csc-collection-object-editionNumber-label" />
                                 </div>
@@ -672,9 +682,9 @@
                                     <input type="text" class="csc-object-description-color" />
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="info-column fl-force-left">
+                        <!--<div class="info-column fl-force-left">-->
                             <div class="info-column2-60 fl-force-left">
                                 <div class="info-column">
                                     <div class="info-pair">
@@ -724,7 +734,8 @@
                         <!--
                         <div class="clear" />
                         -->
-                        <div class="info-column">
+                        <!-- Hidden for UCJEPS -->
+                        <!--<div class="info-column">
                             <div class="info-pair">
                                 <div class="header">
                                     <div class="label csc-collection-object-materialGroup-label" />
@@ -732,9 +743,10 @@
                                 <div class="content">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr> -->
                                                 <!--<td class="table-select"></td>-->
-                                                <td class="csc-collection-object-material-label" />
+                                                <!-- Continue hiding -->
+                                                <!-- <td class="csc-collection-object-material-label" />
                                                 <td class="csc-collection-object-materialComponent-label" />
                                                 <td class="csc-collection-object-materialComponentNote-label" />
                                                 <td class="csc-collection-object-materialName-label" />
@@ -742,9 +754,10 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="csc-collection-object-materialGroup">
+                                            <tr class="csc-collection-object-materialGroup"> -->
                                                 <!--<td class="table-unselected"></td>-->
-                                                <td>
+                                                <!-- More hiding -->
+                                                <!--<td>
                                                     <input type="text" class="csc-object-description-material" />
                                                 </td>
                                                 <td>
@@ -783,16 +796,18 @@
                                 <div class="content">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr> -->
                                                 <!--<td class="table-select"></td>-->
-                                                <td class="csc-collection-object-objectComponentName-label" />
+                                                <!-- More hiding -->
+                                                <!--<td class="csc-collection-object-objectComponentName-label" />
                                                 <td class="csc-collection-object-objectComponentInformation-label" />
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="csc-collection-object-objectComponentGroup">
+                                            <tr class="csc-collection-object-objectComponentGroup"> -->
                                                 <!--<td class="table-unselected"></td>-->
-                                                <td>
+                                                <!-- Continue hiding -->
+                                                <!-- <td>
                                                     <select class="csc-object-description-object-component-name input-select">
                                                         <option value="">Options not loaded</option>
                                                     </select>
@@ -815,17 +830,19 @@
                                 <div class="content">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr>-->
                                                 <!--<td class="table-select"></td>-->
-                                                <td class="csc-collection-object-technicalAttribute-label" />
+                                                <!-- Continue hiding -->
+                                                <!-- <td class="csc-collection-object-technicalAttribute-label" />
                                                 <td class="csc-collection-object-technicalAttributeMeasurement-label" />
                                                 <td class="csc-collection-object-technicalAttributeMeasurementUnit-label" />
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="csc-collection-object-technicalAttributeGroup">
+                                            <tr class="csc-collection-object-technicalAttributeGroup">-->
                                                 <!--<td class="table-unselected"></td>-->
-                                                <td>
+                                                <!-- Continue hiding -->
+                                                <!-- <td>
                                                     <select class="csc-object-description-technical-attribute input-select">
                                                         <option value="">Options not loaded</option>
                                                     </select>
@@ -907,8 +924,10 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="clear" />
-                        </div>
+                        </div> -->
+                        <!-- End of hiding for UCJEPS -->
+                        <div class="clear" />
+                        
 
                         <div class="info-column">
                             <div class="fl-container-flex fl-fix information-subgroup">
