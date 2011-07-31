@@ -39,28 +39,25 @@ CollectionSpace 1.8 default CSS selectors
 
 /* It may be appropriate to move these changes to a separate stylesheet. */
 
-/* Added selector specific to Object Associations and Object Production */
-/* to standardize widths of columns across groups - MTB, 18 July 2011 */
-.objectAssociation .fixedwidth {
-    width: 30% !important;}
-.objectProduction .fixedwidth {
-    width: 30% !important;}
-.objectInformation .fixedfield {
-    width: 25% !important;}
-.objectInformation .fixedwidth {
-    width: 80% !important;}
-.objectInformation .fixedwidth80 {
-    width: 80% !important;}
-.objectInformation .fixedwidth90 {
+/* Added selectors to standardize widths of columns across groups */
+/*  MTB, 21 July 2011 */
+.pahmaCustomColumnWidth .fixedwidth90 {
     width: 90% !important;}
-.objectCollection .fixedfield20 {
-    width: 20% !important;}
-.objectCollection .fixedfield50 {
+.pahmaCustomColumnWidth .fixedwidth80 {
+    width: 80% !important;}
+.pahmaCustomColumnWidth .fixedwidth40 {
+    width: 40% !important;} /* USED TO REGULARIZE COLUMNS IN OBJECT PRODUCTION INFO*/
+.pahmaCustomColumnWidth .fixedwidth30 {
+    width: 30% !important;} /* USED TO REGULARIZE COLUMNS IN OBJECT ASSOCIATIONS */
+    
+.pahmaCustomColumnWidth .fixedfield90 {
+    width: 90% !important;}
+.pahmaCustomColumnWidth .fixedfield50 {
     width: 50% !important;}
-.objectCollection .fixedfield90 {
-    width: 90% !important;}
-.objectCollection .fixedwidth {
-    width: 80% !important;}
+.pahmaCustomColumnWidth .fixedfield25 {
+    width: 25% !important;}
+.pahmaCustomColumnWidth .fixedfield20 {
+    width: 20% !important;}
 /* ---------------------------------------*/
 
 
