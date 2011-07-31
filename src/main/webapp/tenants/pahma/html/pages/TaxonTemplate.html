@@ -17,13 +17,13 @@
 
                     <div class="authority-outer-border">
                         <div class="fl-container-flex fl-fix information-group">
-                            <div class="csc-taxon-taxonNameAuthorityInformation-label csc-recordEditor-header fl-container-flex header toggle"></div>
+                            <div class="csc-taxon-taxonNameAuthorityInformation-label csc-recordEditor-header fl-container-flex header toggle">Taxonomic Name Authority Information</div>
                             <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
                                 <div class="info-column fl-force-left">
                                     <div class="info-column2-50 fl-force-left" >
                                         <div class="info-pair">
                                             <div class="header">
-                                                <div class="label">Display name<span class="required">*</span></div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-displayName-label label"><span class="required">*</span></div>
                                             </div>
                                             <div class="content">
                                                 <input type="text" class="csc-taxon-displayName" />
@@ -33,7 +33,7 @@
                                     <div class="info-column2-50 fl-force-right">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Term status</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-termStatus-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <select class="csc-taxon-termStatus input-select"><option value="">Options not loaded</option></select>
@@ -46,7 +46,7 @@
                                         <div class="info-column2-50 fl-force-left" >
                                             <div class="info-pair">
                                                 <div class="header">
-                                                	<div class="label">Full name</div> <!-- Move label to core-messages.properties -->
+                                                	<div class="csc-taxon-taxonFullName-label label"></div>
                                                 </div>
                                                 <div class="content">
                                                     <input type="text" class="csc-taxon-taxonFullName" />
@@ -56,7 +56,7 @@
                                         <div class="info-column2-50 fl-force-right">
                                             <div class="info-pair">
                                                 <div class="header">
-                                                	<div class="label">Rank</div> <!-- Move label to core-messages.properties -->
+                                                	<div class="csc-taxon-taxonRank-label label"></div>
                                                 </div>
                                                 <div class="content">
                                                     <select class="csc-taxon-taxonRank input-select"><option value="">Options not loaded</option></select>
@@ -67,7 +67,7 @@
                                     <div class="info-column2-50 fl-force-right">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Currency</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonCurrency-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <select class="csc-taxon-taxonCurrency input-select"><option value="">Options not loaded</option></select>
@@ -79,14 +79,14 @@
                                     <div class="info-column1 fl-force-left">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Author</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonAuthorGroup-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <table>
                                                     <thead>
                                                         <tr>
-                                                        	<td>Author</td> <!-- Move label to core-messages.properties -->
-                                                        	<td>Author type</td> <!-- Move label to core-messages.properties -->
+                                                        	<td class="csc-taxon-taxonAuthor-label label"></td>
+                                                        	<td class="csc-taxon-taxonAuthorType-label label"></td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -104,7 +104,7 @@
                                     <div class="info-column2-50 fl-force-left" >
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Year</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonYear-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <input type="text" class="csc-taxon-taxonYear" />
@@ -112,7 +112,7 @@
                                         </div>
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Is named hybrid?</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonIsNamedHybrid-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <select class="csc-taxon-taxonIsNamedHybrid input-select"><option value="">Options not loaded</option></select>
@@ -122,7 +122,7 @@
                                     <div class="info-column2-50 fl-force-right">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Citations</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonCitation-label label"></div>
                                             </div>
                                             <div class="content repeatable">
                                                 <textarea rows="2" cols="30" class="input-textarea csc-taxon-taxonCitation" ></textarea>
@@ -134,7 +134,7 @@
                                     <div class="info-column2-50 fl-force-left" >
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Taxonomic status</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonomicStatus-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <select class="csc-taxon-taxonomicStatus input-select"><option value="">Options not loaded</option></select>
@@ -144,7 +144,7 @@
                                     <div class="info-column2-50 fl-force-right">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Name source</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonNameSource-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <input type="text" class="csc-taxon-taxonNameSource" />
@@ -156,7 +156,7 @@
                                     <div class="info-column2-50 fl-force-left" >
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">Name source code</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonNameSourceCode-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <input type="text" class="csc-taxon-taxonNameSourceCode" />
@@ -166,7 +166,7 @@
                                     <div class="info-column2-50 fl-force-right">
                                         <div class="info-pair">
                                             <div class="header">
-                                            	<div class="label">GUID</div> <!-- Move label to core-messages.properties -->
+                                            	<div class="csc-taxon-taxonGUID-label label"></div>
                                             </div>
                                             <div class="content">
                                                 <input type="text" class="csc-taxon-taxonGUID" />
@@ -177,7 +177,7 @@
                                 <div class="info-column fl-force-left">
                                     <div class="info-pair">
                                         <div class="header">
-                                        	<div class="label">Note</div> <!-- Move label to core-messages.properties -->
+                                        	<div class="csc-taxon-taxonNote-label label"></div>
                                         </div>
                                         <div class="content">
                                             <textarea rows="2" cols="60" class="input-textarea csc-taxon-taxonNote" ></textarea>
