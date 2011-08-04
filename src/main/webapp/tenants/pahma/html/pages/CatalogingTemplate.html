@@ -43,15 +43,16 @@
                                     					</div>
                                     				</div>
                                     			</div>
-                                    			<div class="info-pair"> <!-- Alternate numbers -->
+                                    			<!--<div class="info-pair"> <!-\- Alternate numbers -\->
                                     				<div class="header">
-                                    					<div class="label csc-collection-object-otherNumberGroup-label">Alternate numbers</div> <!-- Move label to core-messages.properties  -->
+                                    					<!-\-<div class="label csc-collection-object-otherNumberGroup-label">Alternate numbers</div>-\-> <!-\- Move label to core-messages.properties  -\->
+                                    					<div class="label csc-collection-object-otherNumbers-label">Alternate numbers</div>
                                     				</div>
                                     				<div class="content">
                                     					<table>
                                     						<thead>
                                     							<tr>
-                                    								<!--<td class="table-select"></td>-->
+                                    								<!-\-<td class="table-select"></td>-\->
                                     								<td class="csc-collection-object-otherNumber-label"></td>
                                     								<td class="csc-collection-object-numberType-label"></td>
                                     								<td class="csc-collection-object-numberNote-label"></td>
@@ -62,6 +63,30 @@
                                     								<td><input type="text" class="csc-object-identification-other-number"/></td>
                                     								<td><select class="csc-object-identification-other-number-type input-select"><option value="">Options not loaded</option></select></td>
                                     								<td><input type="text" class="csc-collection-object-numberNote"/></td>
+                                    							</tr>
+                                    						</tbody>
+                                    					</table>
+                                    				</div>
+                                    			</div>-->
+                                    			<div class="info-pair"> <!-- TEMPORARY REPLACEMENT GROUP LIST: PAHMA Alternate numbers -->
+                                    				<div class="header">
+                                    					<div class="label csc-collection-object-pahmaAltNumGroup-label">PAHMA Alternate numbers</div> <!-- Move label to core-messages.properties  -->
+                                    				</div>
+                                    				<div class="content">
+                                    					<table>
+                                    						<thead>
+                                    							<tr>
+                                    								<!--<td class="table-select"></td>-->
+                                    								<td class="csc-collection-object-pahmaAltNum-label"></td>
+                                    								<td class="csc-collection-object-pahmaAltNumType-label"></td>
+                                    								<td class="csc-collection-object-pahmaAltNumNote-label"></td>
+                                    							</tr>
+                                    						</thead>
+                                    						<tbody>
+                                    							<tr class="csc-collection-object-pahmaAltNumGroup">
+                                    								<td><input type="text" class="csc-collection-object-pahmaAltNum"/></td>
+                                    								<td><select class="csc-collection-object-pahmaAltNumType input-select"><option value="">Options not loaded</option></select></td>
+                                    								<td><input type="text" class="csc-collection-object-pahmaAltNumNote"/></td>
                                     							</tr>
                                     						</tbody>
                                     					</table>
@@ -1801,7 +1826,7 @@
                     </div>
                       
                     <div class="fl-container-flex fl-fix information-group"> <!-- Object Reference Information -->
-                        <div class="info-column"> <!-- XXXXXXXXXXX -->
+                        <div class="info-column">
                             <div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-referenceInformation-label"></div>
                             <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
                                 <!-- Changed in CSPACE-3501. Reference and Catalog number merged into repeatable group; catalog number renamed reference note -->
