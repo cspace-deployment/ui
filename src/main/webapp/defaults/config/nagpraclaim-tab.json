@@ -1,0 +1,63 @@
+{
+    "pageBuilderIO": {
+        "options": {
+            "recordType": "nagpraclaim",
+             "schema": [
+                "recordlist",
+                "namespaces",
+                "recordtypes",
+                "nagpraclaim"
+            ],
+            "pageSpec": {
+                "details": {
+                    "href": "%readonlypages/ClaimTemplate.html",
+                    "templateSelector": ".csc-nagpraclaim-template",
+                    "targetSelector": ".csc-relatedRecordsTab-nagpraclaim .csc-relatedRecordsTab-recordEditor"
+                }
+            }
+        }
+    },
+    "pageBuilder": {
+        "options": {
+            "pageType": "nagpraclaim-tab",
+            "selectors": {
+                "relatedRecordsTab": ".csc-relatedRecordsTab-nagpraclaim"
+            },
+            "components": {
+                "relatedRecordsTab": {
+                    "type": "cspace.relatedRecordsTab",
+                    "options": {
+                        "primary": "{pageBuilder}.options.primary",
+                        "related": "{pageBuilder}.options.related",
+                        "applier": "{pageBuilder}.applier",
+                        "model": "{pageBuilder}.model",
+                        "uispec": "{pageBuilder}.options.uispec",
+                        "strings": {
+                            "editRecord": "Edit Claim Record",
+                            "recordList": "Related Claim Records",
+                            "newRecordRow": "New Claim Record"
+                        },
+                        "components": {
+                            "listEditor": {
+                                "options": {
+                                    "components": {
+                                        "details": {
+                                            "options": {
+                                                "selectors": {
+                                                	"identificationNumber": ".csc-nagpraclaim-nagpraClaimNumber"
+                                                },
+                                                "strings": {
+                                                    "identificationNumberRequired": "Please specify a Claim Number" 
+                                                } 
+                                            } 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
