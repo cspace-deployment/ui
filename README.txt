@@ -1,3 +1,5 @@
+Base of UI 1.8 branch
+
 To build a war file for deployment, run:
 
     mvn clean install
