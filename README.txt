@@ -1,3 +1,5 @@
+Base of UI branch 2.2
+
 To build a war file for deployment, run:
 
     mvn clean install
