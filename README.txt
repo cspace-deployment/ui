@@ -1,4 +1,5 @@
 Base of Pahma v1.8 branch
+Patched from IST-SVN
 
 To build a war file for deployment, run:
 
