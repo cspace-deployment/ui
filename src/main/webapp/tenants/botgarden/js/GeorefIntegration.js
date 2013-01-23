@@ -55,10 +55,10 @@ var cspace = cspace || {};
 				decorators: [{
 					type: "jQuery",
 					func: "click",
-					args: (
-                        function() {
-                            console.log("clicky");
-                        }
+                    args: (
+						function() {
+							console.log("clicky");
+						}
 					)
 				}]
 			}
