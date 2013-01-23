@@ -1910,6 +1910,11 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             container: "{pageBuilder}.options.selectors.myCollectionSpace"
         });
         
+        // Georeference demands
+        fluid.demands("cspace.georefIntegration", "cspace.recordEditor", {
+            container: ".csc-georef"
+        });
+        
         // Number pattern chooser demands
         fluid.demands("cspace.numberPatternChooser", "cspace.recordEditor", {
             container: "{arguments}.0",

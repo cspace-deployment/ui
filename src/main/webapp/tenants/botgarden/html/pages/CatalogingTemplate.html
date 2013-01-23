@@ -545,10 +545,10 @@
 						<div class="header">
 							<div class="label"><br/></div>
 						</div>
-						<div class="content csc-collection-object-localityGroup">
+						<div class="content csc-collection-object-localityGroup csc-georef">
 							<div class="info-column">
 								<div class="info-column2-50 fl-force-left">
-									<div class="info-pair">
+									<div class="info-pair csc-georef-src">
 										<div class="header">
 											<div class="label csc-collection-object-fieldLocVerbatim-label"></div>
 										</div>							  
@@ -686,7 +686,7 @@
 							</div>
 							<div class="info-column fl-force-left">
 								<div class="size1of5 fl-force-left">
-									<div class="info-pair ">
+									<div class="info-pair csc-georef-lat">
 										<div class="header">
 											<div class="label csc-collection-object-decimalLatitude-label"></div>
 										</div>
@@ -696,7 +696,7 @@
 									</div>
 								</div>
 								<div class="size1of5 fl-force-left">
-									<div class="info-pair">
+									<div class="info-pair csc-georef-long">
 										<div class="header">
 											<div class="label csc-collection-object-decimalLongitude-label"></div>
 										</div>
@@ -706,7 +706,7 @@
 									</div>
 								</div>
 								<div class="size1of5 fl-force-left">
-									<div class="info-pair">
+									<div class="info-pair csc-georef-datum">
 										<div class="header">
 											<div class="label csc-collection-object-geodeticDatum-label"></div>
 										</div>
@@ -716,7 +716,7 @@
 									</div>
 								</div>
 								<div class="size1of5 fl-force-left">
-									<div class="info-pair">
+									<div class="info-pair csc-georef-uncertainty">
 										<div class="header">
 											<div class="label csc-collection-object-coordUncertainty-label"></div>
 										</div>
@@ -726,7 +726,7 @@
 									</div>
 								</div>
 								<div class="size1of5 fl-force-left">
-									<div class="info-pair-select">
+									<div class="info-pair-select csc-georef-uncertaintyUnits">
 										<div class="header">
 											<div class="label csc-collection-object-coordUncertaintyUnit-label"></div>
 										</div>
@@ -828,6 +828,10 @@
 								</div>
 							</div>
 
+							<div class="info-column">
+								<button type="button" class="csc-georef-btn">Georef Btn</button>
+							</div>
+
 							<div class="fl-container-flex fl-fix information-subgroup">
 								<div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-geoRefDetail-label cs-togglable-collapsed"></div>
 								<div class="csc-recordEditor-togglable fl-container-flex fl-fix content main" style="display: none">
@@ -905,7 +909,7 @@
 											</div>
 										</div>
 										<div class="size1of5 fl-force-left">
-											<div class="info-pair">
+											<div class="info-pair csc-georef-protocol">
 												<div class="header">
 													<div class="label csc-collection-object-geoRefProtocol-label"></div>
 												</div>
@@ -937,7 +941,7 @@
 									</div>
 									<div class="info-column fl-force-left">
 										<div class="size2of5 fl-force-left">
-											<div class="info-pair">
+											<div class="info-pair csc-georef-remarks">
 												<div class="header">
 													<div class="label csc-collection-object-geoRefRemarks-label"></div>
 												</div>

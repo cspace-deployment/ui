@@ -9,6 +9,14 @@
                 "recordEditor": {
                     "type":  "cspace.recordEditor",
                     "options": {
+                        "selectors": {
+                            "georefIntegrator": ".csc-georef"
+                        },
+                        "components": {
+                            "georefIntegrator": {
+                                "type": "cspace.georefIntegration"
+                            }
+                        },
                         "applier": "{pageBuilder}.applier",
                         "uispec": "{pageBuilder}.options.uispec.recordEditor",
                         "model": "{pageBuilder}.model",
