@@ -6,6 +6,12 @@
                 "recordEditor": {
                     "type":  "cspace.recordEditor",
                     "options": {
+                        "components": {
+                            "berkeleyMapperIntegrator": {
+                                "type": "cspace.berkeleyMapperIntegration",
+                                "createOnEvent": "ready"
+                            }
+                        },
                         "selectors": {
                             "identificationNumber": ".csc-object-identification-object-number" 
                         },
