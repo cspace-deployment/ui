@@ -24,7 +24,9 @@ var cspace = cspace || {};
         recordType: "{recordEditor}.options.recordType",
         berkeleyMapperBtn: ".csc-berkeleyMapper-btn",
         urls: cspace.componentUrlBuilder({
-            reportUrl: "%tenant/%tname/invokereport/%reportcsid/%recordType/%csid/publish"
+            reportUrl: "%tenant/%tname/invokereport/%reportcsid/%recordType/%csid/publish",
+            configUrl: "%webapp/config/BerkeleyMapperConfig.xml",
+            tabfileUrl: "%services%publicItemCsid/%tId/content/"
         })
     });
 
@@ -48,26 +50,18 @@ var cspace = cspace || {};
                     csid: me.globalModel.model.primaryModel.csid
                 });
                 
-                //TODO: this should be a post with json payload to support mapping multiple items down the road
+                //TODO: this should be a POST with json payload to support mapping multiple items down the road
                 $.get(reportUrl, function(data, textStatus, jqXHR) {
                     if (textStatus == "success") {
-                        //TODO: Design Discussion: potentially add cspace-services to the utilities cspace.urlExpander?
-                        var publicItemUrl = "../../../../cspace-services" + jqXHR.getResponseHeader("Location");
-
-                        //TODO: Design Discussion: instead of calling the publicItemUrl to get the contentUri, 
-                        //add a tenantID configuration someplace (potentially in the utils surrounding url building, 
-                        //or in config for the BerkeleyMapper component - in defaults?)
-                        //because the tabfile is just /cspace-services/publicitems/<csid>/<tenantId>/content
-                        $.get(publicItemUrl, function(data, textStatus, jqXHR) {
-                            if (textStatus == "success") {
-                                var tabfile = $(data).find("contentUri").text();
-
-                                //TODO: figure out where the config file should live
-                                var configfile = "../../../ui/lifesci/config/BerkeleyMapperConfig.xml";
-
-                                window.open("http://berkeleymappertest.berkeley.edu/index.html?ViewResults=tab&tabfile=" + tabfile + "&configfile=" + configfile);
-                            }
+                        //TODO: where should the config file live? generalize this to make name based on record type & report type?
+                        var configfile = fluid.stringTemplate(me.options.urls.configUrl);
+                        
+                        var tabfile = fluid.stringTemplate(me.options.urls.tabfileUrl, {
+                            publicItemCsid: jqXHR.getResponseHeader("Location"),
+                            tId: me.model.fields.tenantId
                         });
+                        
+                        window.open("http://berkeleymappertest.berkeley.edu/index.html?ViewResults=tab&tabfile=" + tabfile + "&configfile=" + configfile);
                     }
                 });
             }
