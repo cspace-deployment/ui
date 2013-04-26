@@ -222,6 +222,7 @@ input[type="button"].add {
     height:16px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     font-size: 0.8em;
+    margin-left: 3px;
 }
 input.secondaryButton {
     font-size:1em;
@@ -1554,7 +1555,7 @@ input[type="text"].cs-externalURL.cs-externalURL-error{
     -webkit-border-radius:0;
 	border-radius:0;}
 
-.saveButton, .createFromExistingButton, .cs-searchBox-button, .csc-header-logout, .csc-search-submit, .csc-add-related-record-button, .csc-numberPatternChooser-button, .cs-createNew-createButton, .cs-createNew-createTemplateButton, .cs-messageBar-cancel, .cs-confirmationDialogButton, .cs-user-searchButton, .cs-user-unSearchButton, .cs-searchToRelate-createButton, .cs-searchToRelate-addButton, .cs-createTemplateBox-createButton, .cs-advancedSearch-searchButton, .cs-relateSearchResults-relateButton {
+.saveButton, .createFromExistingButton, .cs-searchBox-button, .csc-header-logout, .csc-search-submit, .csc-add-related-record-button, .csc-show-related-records-button, .csc-numberPatternChooser-button, .cs-createNew-createButton, .cs-createNew-createTemplateButton, .cs-messageBar-cancel, .cs-confirmationDialogButton, .cs-user-searchButton, .cs-user-unSearchButton, .cs-searchToRelate-createButton, .cs-searchToRelate-addButton, .cs-createTemplateBox-createButton, .cs-advancedSearch-searchButton, .cs-relateSearchResults-relateButton {
     -moz-border-radius:4px; 
     -webkit-border-radius:4px;
 	border-radius:4px;
@@ -2381,13 +2382,6 @@ tbody.csc-listView-rows tr.cs-listView-row td a:active, tbody.csc-listView-rows 
 	padding-right: 1.5em;
 }
 
-.oocss .cs-repeatable-group li {
-	background-color: #E2E2E2 !important;
-	border: 1px solid #CCC !important;
-	padding: 4px 4px 0 4px !important;
-	margin-bottom: 4px !important;
-}
-
 .oocss .infoDiv input[type="button"].cs-repeatable-add {
 	top: -12px !important;
 }
@@ -2529,6 +2523,7 @@ input[type="button"].cs-deleteRelationButton {
 .cs-multipleEdit li.cs-repeatable-repeat {
     padding-left: 4px;
     padding-top: 4px;
+    margin-bottom: 4px;
 }
 .cs-multipleEdit ul.cs-repeatable li.cs-repeatable-repeat:last-child {
     margin-bottom: 10px;
