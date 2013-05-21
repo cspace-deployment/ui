@@ -9,7 +9,10 @@
                         "components": {
                             "berkeleyMapperIntegrator": {
                                 "type": "cspace.berkeleyMapperIntegration",
-                                "createOnEvent": "ready"
+                                "createOnEvent": "ready",
+                                "options": {
+                                    "reportName": "BerkeleyMapperTest"
+                                }
                             }
                         },
                         "selectors": {

@@ -23,25 +23,22 @@ var cspace = cspace || {};
         },
         recordType: "{recordEditor}.options.recordType",
         berkeleyMapperBtn: ".csc-berkeleyMapper-btn",
+        reportName: "berkeleyMapperTest",
         urls: cspace.componentUrlBuilder({
             reportUrl: "%tenant/%tname/invokereport/%reportcsid/%recordType/%csid/publish",
-            configUrl: "%webapp/config/BerkeleyMapperConfig.xml",
+            configUrl: "%webapp/config/BerkeleyMapperConfig-%recordType.xml",
             tabfileUrl: "%services%publicItemCsid/%tId/content/"
         })
     });
+    
+    cspace.berkeleyMapperIntegration.finalInit = function(that) {
+        $('.secondary-nav-menu-sub .button-row').append('<button type="button" class="csc-berkeleyMapper-btn">Map with BerkeleyMapper</button>');
 
-    cspace.berkeleyMapperIntegration.finalInit = function(that) {        
         $(that.options.berkeleyMapperBtn).click(function(me) {
             return function() {
-                //TODO: Need Help/Design: ReportProducer.js makes the call to the app layer to get the list of reports, but in no guaranteed order
-                //Here I'm making the assumption that the BerkeleyMapper report is loaded into the selection drop down element
-                //by the time the user clicks the BerkeleyMapper button, and that the BerkeleyMapper report is called 'BerkeleyMapperTest' 
-                //In the future, the BerkeleyMapper reports shouldn't show up in the Report drop down at all. It seems a waste though to 
-                //have to call the same App layer url twice per page load though. We could decide on a naming convention for BerkeleyMapper
-                //related reports, but this still requires looking at the drop down list via the DOM to get the CSID of a report. Optionally could
-                //add the name/CSID to the json config per record type. 
+                //TODO: Figure out an alternate way of getting the CSID of the BerkeleyMapper report
                 var reportTypeSelection = $('#reportType-selection option').filter(function(index) {
-                    return $(this).text() == "BerkeleyMapperTest";
+                    return $(this).text() == me.options.reportName;
                 }).val();
 
                 var reportUrl = fluid.stringTemplate(me.options.urls.reportUrl, {
@@ -53,15 +50,17 @@ var cspace = cspace || {};
                 //TODO: this should be a POST with json payload to support mapping multiple items down the road
                 $.get(reportUrl, function(data, textStatus, jqXHR) {
                     if (textStatus == "success") {
-                        //TODO: where should the config file live? generalize this to make name based on record type & report type?
-                        var configfile = fluid.stringTemplate(me.options.urls.configUrl);
+                        //TODO: where should the config file live? 
+                        var configfile = fluid.stringTemplate(me.options.urls.configUrl, {
+                            recordType: me.options.recordType
+                        });
                         
                         var tabfile = fluid.stringTemplate(me.options.urls.tabfileUrl, {
                             publicItemCsid: jqXHR.getResponseHeader("Location"),
                             tId: me.model.fields.tenantId
                         });
                         
-                        window.open("http://berkeleymappertest.berkeley.edu/index.html?ViewResults=tab&tabfile=" + tabfile + "&configfile=" + configfile);
+                        window.open("http://berkeleymapper.berkeley.edu/index.html?ViewResults=tab&tabfile=" + tabfile + "&configfile=" + configfile);
                     }
                 });
             }
