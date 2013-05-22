@@ -163,7 +163,8 @@ fluid.registerNamespace("cspace.util");
                 }
             },
             webapp: "..",
-            test: "../../../../test"
+            test: "../../../../test",
+            services: "../../../../cspace-services"
         }
     });
 

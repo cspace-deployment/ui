@@ -85,6 +85,9 @@ div.info-column2-50 table input[type="text"], div.info-column2-50 table input[ty
 table input[type="text"], table input[type="password"], table textarea {
     width:100%;
     padding-left:2px;}
+button.csc-berkeleyMapper-btn {
+    vertical-align: middle;
+}
 input[type="submit"].logout {
     font-weight:bold; 
     color:#333; 
@@ -96,7 +99,7 @@ input[type="submit"].logout:hover,
 input[type="submit"].logout:focus {
     background-color:#333; 
     color:#FFF;}
-input[type="button"], input[type="submit"]  {
+input[type="button"], input[type="submit"], button.csc-berkeleyMapper-btn  {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     background-color:#73AA4F; 
     height:21px; 
@@ -109,7 +112,7 @@ input[type="button"], input[type="submit"]  {
     line-height:13px; 
     border:none;}
 input[type="button"]:hover, input[type="submit"]:hover,
-input[type="button"]:focus, input[type="submit"]:focus {
+input[type="button"]:focus, input[type="submit"]:focus, button.csc-berkeleyMapper-btn:hover {
     background-color:#48722D;}
 input[type="button"].saveButton, input[type="submit"].saveButton {
     background:#73AA4F url('../images/icnSave.png') no-repeat 24px 4px; 
@@ -255,7 +258,7 @@ input.secondaryButton:focus, input.secondaryButton:hover {
     display: table-cell;
     vertical-align: middle;
 }
-.button-row input[type="button"], .button-row-right input[type="button"], .button-row a, .button-row-right a {
+.button-row input[type="button"], .button-row-right input[type="button"], .button-row a, .button-row-right a, button.csc-berkeleyMapper-btn {
     margin-left:10px; 
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     /*float:right; */
@@ -1555,7 +1558,7 @@ input[type="text"].cs-externalURL.cs-externalURL-error{
     -webkit-border-radius:0;
 	border-radius:0;}
 
-.saveButton, .createFromExistingButton, .cs-searchBox-button, .csc-header-logout, .csc-search-submit, .csc-add-related-record-button, .csc-show-related-records-button, .csc-numberPatternChooser-button, .cs-createNew-createButton, .cs-createNew-createTemplateButton, .cs-messageBar-cancel, .cs-confirmationDialogButton, .cs-user-searchButton, .cs-user-unSearchButton, .cs-searchToRelate-createButton, .cs-searchToRelate-addButton, .cs-createTemplateBox-createButton, .cs-advancedSearch-searchButton, .cs-relateSearchResults-relateButton {
+.saveButton, .createFromExistingButton, .cs-searchBox-button, .csc-header-logout, .csc-search-submit, .csc-add-related-record-button, .csc-show-related-records-button, .csc-numberPatternChooser-button, .cs-createNew-createButton, .cs-createNew-createTemplateButton, .cs-messageBar-cancel, .cs-confirmationDialogButton, .cs-user-searchButton, .cs-user-unSearchButton, .cs-searchToRelate-createButton, .cs-searchToRelate-addButton, .cs-createTemplateBox-createButton, .cs-advancedSearch-searchButton, .cs-relateSearchResults-relateButton, button.csc-berkeleyMapper-btn {
     -moz-border-radius:4px; 
     -webkit-border-radius:4px;
 	border-radius:4px;
