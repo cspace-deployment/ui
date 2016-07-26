@@ -1,0 +1,1393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CollectionSpace</title>
+	</head>
+	<body>
+		<h1>UC Berkeley CollectionSpace Release Notes</h1>
+<!-- generated_release_notes(bampfa_4.1-20) -->
+<div id="bampfa_4.1-20">
+<h2>Version bampfa_4.1-20 <span class="releasedate">(June  1, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Develop Piction integration to harvest incoming images <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-441">BAMPFA-441</a>)</span>
+<ul class="commits">
+<li id="commit_121a3fe" class="application commit">Add pictionImageHash field.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-19) -->
+<div id="bampfa_4.1-19">
+<h2>Version bampfa_4.1-19 <span class="releasedate">(May 31, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Develop Piction integration to harvest incoming images <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-441">BAMPFA-441</a>)</span>
+<ul class="commits">
+<li id="commit_062bb90" class="application commit">Add websiteDisplayLevel field.</li>
+<li id="commit_61b7933" class="ui commit">Add websiteDisplayLevel field.</li>
+</ul>
+</li>
+<li class="issue">
+Uploading non-image media to a Media record does not display thumbnail <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/CSPACE-6692">CSPACE-6692</a>)</span>
+<ul class="commits">
+<li id="commit_5a70563" class="services commit">We needed to copy the binaries that are in the resources folder without the <filterset> in place because it seems to corrupt them.</li>
+</ul>
+</li>
+<li class="issue">
+"[Message string or key taxon-miniView-fieldXLabel not found]" <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1309">PAHMA-1309</a>)</span>
+<ul class="commits">
+<li id="commit_d80f478" class="ui commit">Add taxon disambiguation popup labels.</li>
+</ul>
+</li>
+<li class="issue">
+"+" is replaced by space in Broader Object <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1342">PAHMA-1342</a>)</span>
+<ul class="commits">
+<li id="commit_5bc660f" class="ui commit">Do not URI-decode display names when parsing refnames.</li>
+<li id="commit_beeaba2" class="application commit">Do not URI-decode display names when parsing refnames.</li>
+</ul>
+</li>
+<li class="issue">
+Implement Conservation procedure <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1403">PAHMA-1403</a>)</span>
+<ul class="commits">
+<li id="commit_ea63040" class="services commit">Add conservation procedure.</li>
+<li id="commit_3f06825" class="application commit">Add conservation procedure.</li>
+<li id="commit_92a224a" class="application commit">Configure vocabularies.</li>
+<li id="commit_20628e3" class="ui commit">Implement conservation record editor.</li>
+<li id="commit_2636dd2" class="application commit">Fix incorrectly named services-record-path.</li>
+<li id="commit_801734f" class="services commit">Configure number generator.</li>
+<li id="commit_991052a" class="application commit">Configure number generator.</li>
+<li id="commit_97f0e62" class="ui commit">Add a missing message.</li>
+<li id="commit_eed6f5f" class="application commit">Configure conservation search.</li>
+<li id="commit_ddfd72c" class="ui commit">Implement conservation advanced search form.</li>
+<li id="commit_48f60e4" class="ui commit">Remove dates in repeating groups from adv search.</li>
+<li id="commit_f81a552" class="application commit">Add conservation to relations configuration.</li>
+<li id="commit_0415933" class="application commit">Add conservation to default, lifesci, and fcart tenants.</li>
+<li id="commit_79dda7c" class="application commit">Add treatmentpurpose options.</li>
+<li id="commit_a9fd6b3" class="application commit">Change conservation number pattern.</li>
+<li id="commit_e669977" class="services commit">Change conservation number pattern.</li>
+<li id="commit_9f5f7e8" class="application commit">Remove autocomplete from sampleReturnedLocation, and add mini to status.</li>
+<li id="commit_e04b58e" class="services commit">Change version numbers to 4.1.1.</li>
+<li id="commit_5e850c3" class="services commit">Downgrade pom files for 4.1.</li>
+<li id="commit_b65dd99" class="services commit">Downgrade conservation for 4.1.</li>
+</ul>
+</li>
+<li class="issue">
+Running large reports causes tomcat to run out of memory <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1455">PAHMA-1455</a>)</span>
+<ul class="commits">
+<li id="commit_efbbfbf" class="services commit">Write reports to temp files instead of memory.</li>
+<li id="commit_bd30bb6" class="application commit">Stream reports from services layer without loading into memory.</li>
+</ul>
+</li>
+<li class="issue">
+Roles: Newer record types not appearing <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1467">PAHMA-1467</a>)</span>
+<ul class="commits">
+<li id="commit_828428f" class="application commit">Hack the permissions page size to be 400 for now.</li>
+</ul>
+</li>
+<li class="issue">
+Add Geographic range of Taxon field (taxonomic.range) to Locality template <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/UCBG-430">UCBG-430</a>)</span>
+<ul class="commits">
+<li id="commit_d874e89" class="ui commit">Add taxonomicRange to default locality template.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_f69616f" class="application commit">Prevent app layer log messages from being duplicated in catalina.out.</li>
+<li id="commit_d397b68" class="services commit">Write authenticated user to the request so it may be logged.</li>
+<li id="commit_f006c51" class="application commit">Merge changes from defaults into tenant overrides.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-18) -->
+<div id="bampfa_4.1-18">
+<h2>Version bampfa_4.1-18 <span class="releasedate">(March 23, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Develop Piction integration to harvest incoming images <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-441">BAMPFA-441</a>)</span>
+<ul class="commits">
+<li id="commit_e7f32a6" class="application commit">Change pictionId to be an integer.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-17) -->
+<div id="bampfa_4.1-17">
+<h2>Version bampfa_4.1-17 <span class="releasedate">(March 23, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Develop Piction integration to harvest incoming images <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-441">BAMPFA-441</a>)</span>
+<ul class="commits">
+<li id="commit_2dba74a" class="application commit">Add pictionId field to media.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-16) -->
+<div id="bampfa_4.1-16">
+<h2>Version bampfa_4.1-16 <span class="releasedate">(January 22, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Accent-insensitive searching doesn't work <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-471">BAMPFA-471</a>)</span>
+<ul class="commits">
+<li id="commit_24bdc83" class="services commit">Add unaccent config.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-15) -->
+<div id="bampfa_4.1-15">
+<h2>Version bampfa_4.1-15 <span class="releasedate">(January 18, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Database connections are not pooled <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/CSPACE-6823">CSPACE-6823</a>)</span>
+<ul class="commits">
+<li id="commit_910fc60" class="services commit">Reduce c3p0 connection pool logging.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_2ccb703" class="services commit">Tweak log levels.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-14) -->
+<div id="bampfa_4.1-14">
+<h2>Version bampfa_4.1-14 <span class="releasedate">(January  4, 2016)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Database connections are not pooled <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/CSPACE-6823">CSPACE-6823</a>)</span>
+<ul class="commits">
+<li id="commit_eccef2f" class="services commit">Cache and re-use EntityManagerFactory instances.</li>
+<li id="commit_97ddd77" class="services commit">Configure pooling for JPA.</li>
+<li id="commit_6229eff" class="services commit">Clear entity manager factory cache after releasing.</li>
+</ul>
+</li>
+<li class="issue">
+App layer processing of list results is very inefficient <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/CSPACE-6852">CSPACE-6852</a>)</span>
+<ul class="commits">
+<li id="commit_5716b9a" class="application commit">Refactor GenericStorage.getHardListView.</li>
+<li id="commit_1a30153" class="application commit">Refactor AuthorizationStorage.getPathsJSON.</li>
+<li id="commit_e725158" class="application commit">Replace node.matches call in ServicesRelationStorage.getPathsJSON with string equality test.</li>
+<li id="commit_759f026" class="application commit">Replace node.matches call in ConfiguredVocabStorage.getPathsJSON with string equality test.</li>
+<li id="commit_94291dc" class="application commit">Replace node.matches call in GenericStorage.handleHierarchyPayloadRetrieve with string equality test.</li>
+<li id="commit_a66fbc4" class="application commit">Refactor GenericStorage.getRepeatableHardListView.</li>
+</ul>
+</li>
+<li class="issue">
+Install demo instances of botanical garden, anthropology, and herbarium tenants <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/CSPACE-6856">CSPACE-6856</a>)</span>
+<ul class="commits">
+<li id="commit_86d4b75" class="application commit">Uncomment taxon from core-tenant.xml, so nuxeo doctype bundles are properly built.</li>
+</ul>
+</li>
+<li class="issue">
+Osteology: Implement "Cultural Modification" information section <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1397">PAHMA-1397</a>)</span>
+<ul class="commits">
+<li id="commit_b881e31" class="application commit">Configure fields and vocabs for osteo cultural modification section.</li>
+</ul>
+</li>
+<li class="issue">
+Add "Nectandra Working Group Number" to Other Number static vocabulary <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/UCJEPS-615">UCJEPS-615</a>)</span>
+<ul class="commits">
+<li id="commit_1f1f48a" class="application commit">add 'living under' to associated taxa interactions</li>
+</ul>
+</li>
+<li class="issue">
+Add locality group to media record <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/UCJEPS-619">UCJEPS-619</a>)</span>
+<ul class="commits">
+<li id="commit_b262143" class="application commit">Add locality group config and modify naturalhistory-collectionobject.xml to use it.</li>
+<li id="commit_50542e0" class="ui commit">Add locality group component.</li>
+<li id="commit_04dd668" class="application commit">Generate authrefs/termrefs correctly for 'self renderer' groups not in the common schema.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_034267e" class="application commit">CSPACE-6590, CSPACE-6696: Fixed issues causing very bad fanout to the services layer when reading role permissions.</li>
+<li id="commit_2cfb209" class="ui commit">Add osteo files to defaults.</li>
+<li id="commit_7c4f303" class="ui commit">Add (commented out) osteo css and js to record.html.</li>
+<li id="commit_90976bb" class="ui commit">Add core osteology messages to defaults.</li>
+<li id="commit_492534f" class="ui commit">Remove anthro extension fields from default osteology template.</li>
+<li id="commit_220f4a4" class="ui commit">Properly close a textarea tag.</li>
+<li id="commit_95e0c50" class="application commit">Add defaults/anthropology-procedure-osteology.xml to shared branch.</li>
+<li id="commit_6a95fcc" class="application commit">Merge changes from defaults into tenant overrides.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-13) -->
+<div id="bampfa_4.1-13">
+<h2>Version bampfa_4.1-13 <span class="releasedate">(October  1, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_1958b73" class="services commit">Instantiate an evaluator on the stack for calls to StructuredDate.parse, so that it is thread safe.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-12) -->
+<div id="bampfa_4.1-12">
+<h2>Version bampfa_4.1-12 <span class="releasedate">(August 10, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Disable Nuxeo conversion cache <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1356">PAHMA-1356</a>)</span>
+<ul class="commits">
+<li id="commit_6aa5fc6" class="services commit">Disable conversion service cache.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-11) -->
+<div id="bampfa_4.1-11">
+<h2>Version bampfa_4.1-11 <span class="releasedate">(July 20, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Develop Piction integration <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-441">BAMPFA-441</a>)</span>
+<ul class="commits">
+<li id="commit_077514b" class="application commit">Add primaryDisplay and computedOrderNumber fields to media_bampfa.</li>
+<li id="commit_6cb9e92" class="ui commit">Add primary display and computed order number fields to media, and sort snapshots by computedOrderNumber.</li>
+</ul>
+</li>
+<li class="issue">
+Please add a repeating field set (References) to Place Authority Term Information <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1234">PAHMA-1234</a>)</span>
+<ul class="commits">
+<li id="commit_6035740" class="application commit">Add anthropology place extension.</li>
+</ul>
+</li>
+<li class="issue">
+Please add a repeating field set (Assoc. persons) to Place Authority Term Information <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1235">PAHMA-1235</a>)</span>
+<ul class="commits">
+<li id="commit_005a47a" class="application commit">Add place assoc. persons group.</li>
+</ul>
+</li>
+<li class="issue">
+Add four non-repeating fields to Locality Information (Place Authority) <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1236">PAHMA-1236</a>)</span>
+<ul class="commits">
+<li id="commit_fb144f0" class="application commit">Add township, range, and section fields.</li>
+</ul>
+</li>
+<li class="issue">
+Change rules to structured date parser <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1290">PAHMA-1290</a>)</span>
+<ul class="commits">
+<li id="commit_a7edb7e" class="services commit">Allow optional comma in yearSpanningWinter.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_3347829" class="services commit">Change version of gbif parser to 2.0 (not 2.0-SNAPSHOT).</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-10) -->
+<div id="bampfa_4.1-10">
+<h2>Version bampfa_4.1-10 <span class="releasedate">(May 19, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Move PAHMA extensions for Condition Check to Anthropology extension <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/PAHMA-1280">PAHMA-1280</a>)</span>
+<ul class="commits">
+<li id="commit_50747c5" class="application commit">Add anthropology conditioncheck extension.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_4b782ef" class="application commit">Move app perflog into tomcat logs directory.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-9) -->
+<div id="bampfa_4.1-9">
+<h2>Version bampfa_4.1-9 <span class="releasedate">(May 19, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Upgrade bampfa services layer to 4.1.1 <span class="issuenumber">(<a href="https://issues.collectionspace.org/browse/BAMPFA-377">BAMPFA-377</a>)</span>
+<ul class="commits">
+<li id="commit_2131824" class="services commit">Change group name to reporters_bampfa in grant script.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-8) -->
+<div id="bampfa_4.1-8">
+<h2>Version bampfa_4.1-8 <span class="releasedate">(May 11, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Delete either Production Place or Site field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-413">BAMPFA-413</a>)</span>
+<ul class="commits">
+<li id="commit_b9cf08b" class="ui commit">Hide site field (assocPlace).</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-7) -->
+<div id="bampfa_4.1-7">
+<h2>Version bampfa_4.1-7 <span class="releasedate">(April 26, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Add options to TR/Other number dropdown list <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-417">BAMPFA-417</a>)</span>
+<ul class="commits">
+<li id="commit_7f265f9" class="application commit">Separate Donor and Gallery options in otherNumber.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-6) -->
+<div id="bampfa_4.1-6">
+<h2>Version bampfa_4.1-6 <span class="releasedate">(April 20, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Add Credit line and Source fields to Advanced Search criteria for Cataloging <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-407">BAMPFA-407</a>)</span>
+<ul class="commits">
+<li id="commit_5fb0ebd" class="application commit">Make creditLine searchable.</li>
+<li id="commit_747c55b" class="ui commit">Add creditLine to cataloging adv search.</li>
+</ul>
+</li>
+<li class="issue">
+Add Artist to search result summary field (concatenate with title) <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-408">BAMPFA-408</a>)</span>
+<ul class="commits">
+<li id="commit_9ed56fb" class="ui commit">Make tenant copy of Search.js.</li>
+<li id="commit_8ad5c23" class="ui commit">Add artist (primary bampfaObjectProductionPerson) to search results.</li>
+</ul>
+</li>
+<li class="issue">
+Move, Rename, and Modify "Artist Collective" to "Production Organization" in Cataloging <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-410">BAMPFA-410</a>)</span>
+<ul class="commits">
+<li id="commit_752d071" class="application commit">Add organization-organization to objectProductionPeople authorities, and tie objectProductionPeopleRole to a vocabulary.</li>
+<li id="commit_1473827" class="ui commit">Make objectProductionPeopleRole a dropdown.</li>
+<li id="commit_74b17c6" class="ui commit">Relabel and move Artists Collective.</li>
+</ul>
+</li>
+<li class="issue">
+Move Series Title field under Title field in the Object ID Information group on Cataloging <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-411">BAMPFA-411</a>)</span>
+<ul class="commits">
+<li id="commit_d2cdc77" class="ui commit">Move series title.</li>
+</ul>
+</li>
+<li class="issue">
+Add options to TR/Other number dropdown list <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-417">BAMPFA-417</a>)</span>
+<ul class="commits">
+<li id="commit_d76eec7" class="application commit">Add options to numberType.</li>
+</ul>
+</li>
+<li class="issue">
+Set default number of search results per page >= 50 <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-419">BAMPFA-419</a>)</span>
+<ul class="commits">
+<li id="commit_5158a9e" class="ui commit">Make tenant copies of advancedsearch.json and findedit.json.</li>
+<li id="commit_4143eee" class="ui commit">Set default page size to 50 on search and adv search.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-5) -->
+<div id="bampfa_4.1-5">
+<h2>Version bampfa_4.1-5 <span class="releasedate">(April 14, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+References to catalina.home should be to catalina.base <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/CSPACE-6617">CSPACE-6617</a>)</span>
+<ul class="commits">
+<li id="commit_2afcc07" class="services commit">Change catalina.home references to catalina.base.</li>
+<li id="commit_96eabc1" class="application commit">Change catalina.home references to catalina.base.</li>
+</ul>
+</li>
+<li class="issue">
+Exhibitions: Align with Functional WG recommendations <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-1226">PAHMA-1226</a>)</span>
+<ul class="commits">
+<li id="commit_30a7ba0" class="application commit">Add vocab terms, and add exhibitionReferenceType field.</li>
+<li id="commit_d92266d" class="ui commit">Add reference type field.</li>
+</ul>
+</li>
+<li class="issue">
+Exhibitions: Align with Functional WG recommendations (part 2) <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-1240">PAHMA-1240</a>)</span>
+<ul class="commits">
+<li id="commit_6967056" class="application commit">Add fields to exhibition procedure.</li>
+<li id="commit_ba93c3b" class="ui commit">Add fields to exhibition procedure.</li>
+<li id="commit_f29dbea" class="ui commit">Add sponsor and organizer to exhibition adv search.</li>
+<li id="commit_b04b121" class="application commit">Make sponsor and organizer repeating.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-4) -->
+<div id="bampfa_4.1-4">
+<h2>Version bampfa_4.1-4 <span class="releasedate">(February 25, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Remove unused services layer customizations <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-1176">PAHMA-1176</a>)</span>
+<ul class="commits">
+<li id="commit_c0213e7" class="services commit">Remove acquisitions_anthropology configuration.</li>
+<li id="commit_f3ee74f" class="services commit">Remove claims_anthropology configuration.</li>
+<li id="commit_9e6801a" class="services commit">Remove collectionobjects_anthropology configuration.</li>
+<li id="commit_00ac6ac" class="services commit">Remove customizations to tenant-bindings-proto.xml, since it is no longer used.</li>
+<li id="commit_dcf2d88" class="services commit">Remove customizations to Invocable.java, since they are not doing anything.</li>
+<li id="commit_d7f34bb" class="services commit">Remove concepts_naturalhistory configuration.</li>
+<li id="commit_1319e91" class="services commit">Remove contacts_anthropology configuration.</li>
+<li id="commit_c61c6ee" class="services commit">Remove loansin_naturalhistory configuration.</li>
+<li id="commit_6042c73" class="services commit">Remove loansout_naturalhistory configuration.</li>
+<li id="commit_f723b39" class="services commit">Remove locations_anthropology configuration.</li>
+<li id="commit_b4f5dd0" class="services commit">Remove movements_anthropology configuration.</li>
+<li id="commit_f7abf24" class="services commit">Remove movements_naturalhistory configuration.</li>
+<li id="commit_2b6dc99" class="services commit">Remove objectexit_anthropology configuration.</li>
+<li id="commit_349422b" class="services commit">Remove objectexit_naturalhistory configuration.</li>
+<li id="commit_3b66a57" class="services commit">Remove organizations_anthropology configuration.</li>
+<li id="commit_ab7993b" class="services commit">Remove organizations_naturalhistory configuration.</li>
+<li id="commit_34f0061" class="services commit">Remove persons_anthropology configuration.</li>
+<li id="commit_6533389" class="services commit">Remove taxon_naturalhistory configuration.</li>
+</ul>
+</li>
+<li class="issue">
+Customize condition check and valuation control procedures <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-1190">PAHMA-1190</a>)</span>
+<ul class="commits">
+<li id="commit_680a1bd" class="ui commit">Add fieldsToIgnore to conditioncheck-tab.json and valuationcontrol-tab.json.</li>
+</ul>
+</li>
+<li class="issue">
+New procedure: Exhibitions <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-1215">PAHMA-1215</a>)</span>
+<ul class="commits">
+<li id="commit_c8430ad" class="services commit">Add exhibition procedure.</li>
+<li id="commit_44c0318" class="application commit">Add exhibition procedure.</li>
+<li id="commit_b75dfcc" class="ui commit">Add exhibition procedure.</li>
+<li id="commit_8909559" class="application commit">Add services-schema-qualify='true' to title.</li>
+<li id="commit_184c1a9" class="ui commit">Add exhibition adv search form.</li>
+<li id="commit_ce019d7" class="ui commit">Correct some field labels.</li>
+<li id="commit_71fd1e7" class="ui commit">Add styling for large textareas.</li>
+<li id="commit_9646e5c" class="application commit">Configure exhibition term lists.</li>
+<li id="commit_f5aa2eb" class="ui commit">Add wrapper div around sections.</li>
+</ul>
+</li>
+<li class="issue">
+State/County picklist prep for digitization project <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/UCJEPS-534">UCJEPS-534</a>)</span>
+<ul class="commits">
+<li id="commit_17a34d1" class="application commit">Update fieldLocCounty and fieldLocState options.</li>
+</ul>
+</li>
+<li class="issue">
+Add more counties to controlled list <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/UCJEPS-558">UCJEPS-558</a>)</span>
+<ul class="commits">
+<li id="commit_952922c" class="application commit">Add remaining US counties to fieldLocCounty options.</li>
+</ul>
+</li>
+<li class="issue">
+UCJEPS Cataloging Taxonomic Determination Qualifier drop down: add value 'cv.' <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/UCJEPS-561">UCJEPS-561</a>)</span>
+<ul class="commits">
+<li id="commit_37059f8" class="application commit">Add cv. to qualifier options.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_e51ea9a" class="application commit">Correct a markup error in fieldLocState options.</li>
+<li id="commit_25249f0" class="application commit">Remove an obsolete customization to xmlmerge.properties.</li>
+<li id="commit_248825d" class="application commit">Remove a whitespace-only customization to lifesci-authority-citation.xml.</li>
+<li id="commit_0067bb5" class="ui commit">Remove unnecessary customization from concept.json.</li>
+<li id="commit_79e7d1a" class="ui commit">Remove unnecessary duplicate rules from cspace.css.</li>
+<li id="commit_9e62cc8" class="application commit">Copy changes from defaults into tenant overrides.</li>
+<li id="commit_4fd4477" class="ui commit">Copy changes from defaults into tenant overrides.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-3) -->
+<div id="bampfa_4.1-3">
+<h2>Version bampfa_4.1-3 <span class="releasedate">(February  4, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Add directives to set the max number of autocomplete matches to 100 <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-388">BAMPFA-388</a>)</span>
+<ul class="commits">
+<li id="commit_78aa77c" class="services commit">Change default maxListItemsReturnedLimitOnJdbcQueries to 100, and default jdbcQueriesAreTenantIdRestricted to false.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-2) -->
+<div id="bampfa_4.1-2">
+<h2>Version bampfa_4.1-2 <span class="releasedate">(January 21, 2015)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Convert bamart databases to be instance-specific <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-380">BAMPFA-380</a>)</span>
+<ul class="commits">
+<li id="commit_55887d1" class="services commit">Configure instance id.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.1-1) -->
+<div id="bampfa_4.1-1">
+<h2>Version bampfa_4.1-1 <span class="releasedate">(January 20, 2015)</span></h2>
+<p class="description">This release of BAMPFA-CollectionSpace is based on CollectionSpace 4.1.1. Please see the <a href="http://wiki.collectionspace.org/display/collectionspace/Release+4.1#Release4.1-Overview">Release 4.1 Overview</a> for details.</p></div>
+<!-- generated_release_notes(bampfa_4.0-54) -->
+<div id="bampfa_4.0-54">
+<h2>Version bampfa_4.0-54 <span class="releasedate">(November 25, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Disambiguation pop-up does not appear when user does not have write permission to the authority <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-340">BAMPFA-340</a>)</span>
+<ul class="commits">
+<li id="commit_7a219f4" class="ui commit">Fix disambiguation pop-up not appearing when user has read-only access to the referenced authority.</li>
+<li id="commit_860d84e" class="ui commit">Add getAuthority function to cspace.vocab.</li>
+<li id="commit_7882a22" class="ui commit">Transfer updates from defaults/js/Utilities.js to tenant override.</li>
+</ul>
+</li>
+<li class="issue">
+Disambiguation pop-up doesn't appear in cataloging hierarchy fields <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-347">BAMPFA-347</a>)</span>
+<ul class="commits">
+<li id="commit_cc48180" class="application commit">Add collectionobject objectNumber back to list results.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-53) -->
+<div id="bampfa_4.0-53">
+<h2>Version bampfa_4.0-53 <span class="releasedate">(November 20, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Allow relating records without having write permissions <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-326">BAMPFA-326</a>)</span>
+<ul class="commits">
+<li id="commit_0e0c581" class="ui commit">Make tenant copy of Utilities.js.</li>
+<li id="commit_3cf6a4e" class="ui commit">Show delete relation buttons on secondary tabs with read-only permission.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Add artist display override field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-334">BAMPFA-334</a>)</span>
+<ul class="commits">
+<li id="commit_576f00c" class="application commit">Add artistDisplayOverride to collectionobjects_bampfa.</li>
+<li id="commit_37a1178" class="ui commit">Add Artist Disply Override field to cataloging.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-52) -->
+<div id="bampfa_4.0-52">
+<h2>Version bampfa_4.0-52 <span class="releasedate">(November 13, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Allow relating records without having write permissions <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-326">BAMPFA-326</a>)</span>
+<ul class="commits">
+<li id="commit_f3b771e" class="ui commit">Make tenant copies of RelationManager.js and SearchToRelateDialog.js.</li>
+<li id="commit_d355e28" class="ui commit">Show add relation buttons on read-only records.</li>
+</ul>
+</li>
+<li class="issue">
+Search for groups in search to relate dialog returns cataloging records <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-327">BAMPFA-327</a>)</span>
+<ul class="commits">
+<li id="commit_108347c" class="ui commit">Fix search record type dropdowns defaulting to cataloging even when it's not an option.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-51) -->
+<div id="bampfa_4.0-51">
+<h2>Version bampfa_4.0-51 <span class="releasedate">(November  6, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Default Record Type in search dropdowns to Cataloging <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-315">BAMPFA-315</a>)</span>
+<ul class="commits">
+<li id="commit_743f3d8" class="ui commit">Make tenant copy of SearchBox.js.</li>
+<li id="commit_3e58b25" class="ui commit">Change default search type to cataloging.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-50) -->
+<div id="bampfa_4.0-50">
+<h2>Version bampfa_4.0-50 <span class="releasedate">(November  4, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Measurement summary should include units <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-314">BAMPFA-314</a>)</span>
+<ul class="commits">
+<li id="commit_ee92456" class="ui commit">Use 'in.' and 'cm.' in dimension summary instead of 'inches' and 'centimeters'.</li>
+</ul>
+</li>
+<li class="issue">
+Add page size 500 option <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-318">BAMPFA-318</a>)</span>
+<ul class="commits">
+<li id="commit_96cf802" class="ui commit">Make tenant copy of findedit.html.</li>
+<li id="commit_bc65b87" class="ui commit">Add page size 500 option to advanced search and find/edit.</li>
+</ul>
+</li>
+<li class="issue">
+Advanced Search Cataloging: Add Medium field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-319">BAMPFA-319</a>)</span>
+<ul class="commits">
+<li id="commit_ae163f3" class="application commit">Configure collectionobject physicalDescription to be searchable.</li>
+<li id="commit_a031786" class="ui commit">Add medium to cataloging advanced search.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-49) -->
+<div id="bampfa_4.0-49">
+<h2>Version bampfa_4.0-49 <span class="releasedate">(November  4, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Measurement summary should include units <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-314">BAMPFA-314</a>)</span>
+<ul class="commits">
+<li id="commit_e36066e" class="ui commit">Add units to measurement summary.</li>
+</ul>
+</li>
+<li class="issue">
+Please change the Advanced search default operator to "all (AND)" <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/PAHMA-477">PAHMA-477</a>)</span>
+<ul class="commits">
+<li id="commit_2c03700" class="ui commit">Default advanced search operator to AND.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-48) -->
+<div id="bampfa_4.0-48">
+<h2>Version bampfa_4.0-48 <span class="releasedate">(October 31, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Change group owner to free text <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-308">BAMPFA-308</a>)</span>
+<ul class="commits">
+<li id="commit_acb5cf8" class="application commit">Change group owner to free text.</li>
+</ul>
+</li>
+<li class="issue">
+Person: Make missing display name error message more informative <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-309">BAMPFA-309</a>)</span>
+<ul class="commits">
+<li id="commit_f759430" class="ui commit">Change person-identificationNumberRequired message.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-47) -->
+<div id="bampfa_4.0-47">
+<h2>Version bampfa_4.0-47 <span class="releasedate">(October 23, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Add associated place as "Site" <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-300">BAMPFA-300</a>)</span>
+<ul class="commits">
+<li id="commit_fe229d5" class="ui commit">Add Site field to cataloging form.</li>
+</ul>
+</li>
+<li class="issue">
+Configure UI minification <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-301">BAMPFA-301</a>)</span>
+<ul class="commits">
+<li id="commit_f48bde8" class="ui commit">Copy wro.xml to wro-bampfa.xml.</li>
+<li id="commit_8b515f3" class="ui commit">Update configuration in wro-bampfa.xml.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_735cce3" class="ui commit">Delete tenant copy of TitleBar.js, as it's now the same as the default.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-46) -->
+<div id="bampfa_4.0-46">
+<h2>Version bampfa_4.0-46 <span class="releasedate">(October 21, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Page hang on saving a media record after deleting its file <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-297">BAMPFA-297</a>)</span>
+<ul class="commits">
+<li id="commit_ae2b914" class="ui commit">Comment out blob dimension fields in media.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-45) -->
+<div id="bampfa_4.0-45">
+<h2>Version bampfa_4.0-45 <span class="releasedate">(October 20, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Media: Customize to be similar to cinefiles <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-296">BAMPFA-296</a>)</span>
+<ul class="commits">
+<li id="commit_33c21e1" class="ui commit">Restore mistakenly removed title field.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-44) -->
+<div id="bampfa_4.0-44">
+<h2>Version bampfa_4.0-44 <span class="releasedate">(October 20, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Media: Customize to be similar to cinefiles <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-296">BAMPFA-296</a>)</span>
+<ul class="commits">
+<li id="commit_1b06258" class="application commit">Configure media title to be computed, add titleSearch field for advanced search.</li>
+<li id="commit_916517d" class="ui commit">Make media title computed, hide title and id number fields.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-43) -->
+<div id="bampfa_4.0-43">
+<h2>Version bampfa_4.0-43 <span class="releasedate">(October 17, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Media: Add image number field  <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-287">BAMPFA-287</a>)</span>
+<ul class="commits">
+<li id="commit_2fae521" class="ui commit">Make tenant copies of media.json and media-tab.json.</li>
+<li id="commit_1ce3fa6" class="ui commit">Make media image number required, and identification number not required.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-42) -->
+<div id="bampfa_4.0-42">
+<h2>Version bampfa_4.0-42 <span class="releasedate">(October 16, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Implement accession number calculation <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-166">BAMPFA-166</a>)</span>
+<ul class="commits">
+<li id="commit_bf97d4d" class="ui commit">Remove objectNumber from cataloging fieldsToIgnore.</li>
+</ul>
+</li>
+<li class="issue">
+Reorder dimension fields and add dimension note to UI <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-206">BAMPFA-206</a>)</span>
+<ul class="commits">
+<li id="commit_25b998e" class="application commit">Move modified base-other-dimension.xml back into defaults.</li>
+</ul>
+</li>
+<li class="issue">
+Make create new from existing copy relations <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-240">BAMPFA-240</a>)</span>
+<ul class="commits">
+<li id="commit_d1ce0df" class="ui commit">Copy fieldsToIgnore into tab config files.</li>
+</ul>
+</li>
+<li class="issue">
+Add LMI:Crate and Cataloging:Current Crate Location fields <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-258">BAMPFA-258</a>)</span>
+<ul class="commits">
+<li id="commit_7f354fb" class="ui commit">Make tenant copy of cataloging-tab.json.</li>
+<li id="commit_e1c015e" class="ui commit">Add computedCrate to fieldsToIgnore for cataloging records.</li>
+</ul>
+</li>
+<li class="issue">
+Rich text fields are not disabled on read-only records <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-279">BAMPFA-279</a>)</span>
+<ul class="commits">
+<li id="commit_c5e11d4" class="ui commit">Add styling for disabled rich text fields.</li>
+<li id="commit_ee3e74e" class="ui commit">Disable rich text fields on read-only records.</li>
+</ul>
+</li>
+<li class="issue">
+Add terms to permission to reproduce <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-281">BAMPFA-281</a>)</span>
+<ul class="commits">
+<li id="commit_24bedbd" class="application commit">Add terms to permissionToReproduce on collectionobject and person.</li>
+</ul>
+</li>
+<li class="issue">
+Media: Add image number field  <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-287">BAMPFA-287</a>)</span>
+<ul class="commits">
+<li id="commit_96d185d" class="ui commit">Make tenant copy of MediaTemplate.html.</li>
+<li id="commit_bfea302" class="application commit">Add imageNumber to media_bampfa.</li>
+<li id="commit_19c6104" class="ui commit">Add image number field to media record editor.</li>
+<li id="commit_647fc45" class="ui commit">Make tenant copy of SearchFieldsTemplate-media.html.</li>
+<li id="commit_e23f039" class="ui commit">Clean up whitespace.</li>
+<li id="commit_2ff952c" class="ui commit">Add image number to media advanced search.</li>
+<li id="commit_baf2fa3" class="ui commit">Make tenant copy of MediaView.js.</li>
+<li id="commit_0303170" class="ui commit">Sort media snapshots by image number.</li>
+<li id="commit_5609925" class="ui commit">Change media number label to 'Image Number'.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-41) -->
+<div id="bampfa_4.0-41">
+<h2>Version bampfa_4.0-41 <span class="releasedate">(October  2, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Reorder dimension fields and add dimension note to UI <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-206">BAMPFA-206</a>)</span>
+<ul class="commits">
+<li id="commit_bc33412" class="application commit">Move modified bampfa-other-dimension.xml into tenants.</li>
+</ul>
+</li>
+<li class="issue">
+Make dimension measured part free text <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-278">BAMPFA-278</a>)</span>
+<ul class="commits">
+<li id="commit_90d6458" class="application commit">Remove options from dimensions measuredPart.</li>
+<li id="commit_07dcd5e" class="ui commit">Change dimension measuredPart from a dropdown to a text field.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-40) -->
+<div id="bampfa_4.0-40">
+<h2>Version bampfa_4.0-40 <span class="releasedate">(October  2, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Add subjectTheme field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-219">BAMPFA-219</a>)</span>
+<ul class="commits">
+<li id="commit_98cc90c" class="application commit">Add 'Mick Jagger' to subjectsandthemes vocabulary.</li>
+</ul>
+</li>
+<li class="issue">
+Add S3 components to the services  code repo. <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-276">BAMPFA-276</a>)</span>
+<ul class="commits">
+<li id="commit_7af6596" class="services commit">Add Amazon S3 binary manager files, and examples of configuration.</li>
+<li id="commit_6415637" class="services commit">Add commented out configuration to use the S3 binary manager.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-39) -->
+<div id="bampfa_4.0-39">
+<h2>Version bampfa_4.0-39 <span class="releasedate">(September 29, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Install postgres unaccent extension on bampfa-dev <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-199">BAMPFA-199</a>)</span>
+<ul class="commits">
+<li id="commit_9855c72" class="services commit">Add SQL script to create unnaccented full text search configuration.</li>
+</ul>
+</li>
+<li class="issue">
+Add Crate storage location vocabulary <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-257">BAMPFA-257</a>)</span>
+<ul class="commits">
+<li id="commit_6899046" class="services commit">Add SQL to set Crate vocabulary csid to a known value.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-38) -->
+<div id="bampfa_4.0-38">
+<h2>Version bampfa_4.0-38 <span class="releasedate">(September 29, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Add Series Title and Part Of fields <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-273">BAMPFA-273</a>)</span>
+<ul class="commits">
+<li id="commit_141ca6f" class="application commit">Configure seriesTitle and partOf fields in collectionobjects_bampfa.</li>
+<li id="commit_6f4fd7b" class="ui commit">Add Series Title and Part Of fields to cataloging screen and advanced search.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Add Collection Texts repeating field group <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-274">BAMPFA-274</a>)</span>
+<ul class="commits">
+<li id="commit_b6c4887" class="application commit">Configure collectionTextGroup in collectionobjects_bampfa.</li>
+<li id="commit_33b32ae" class="ui commit">Add Collection Text fields to cataloging form.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-37) -->
+<div id="bampfa_4.0-37">
+<h2>Version bampfa_4.0-37 <span class="releasedate">(September 26, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Make person display name and FML name editable <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-239">BAMPFA-239</a>)</span>
+<ul class="commits">
+<li id="commit_3e17052" class="application commit">Make person Display Name and FML Name editable.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Add fields to advanced search <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-270">BAMPFA-270</a>)</span>
+<ul class="commits">
+<li id="commit_2c3c695" class="application commit">Configure some additional cataloging fields to be searchable.</li>
+<li id="commit_ebdca96" class="ui commit">Add some more fields to cataloging advanced search.</li>
+</ul>
+</li>
+<li class="issue">
+Return to search from advanced search causes javascript errors <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-271">BAMPFA-271</a>)</span>
+<ul class="commits">
+<li id="commit_7859a8a" class="ui commit">Fix js errors when returning to advanced search with dynamic term lists.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-36) -->
+<div id="bampfa_4.0-36">
+<h2>Version bampfa_4.0-36 <span class="releasedate">(September 25, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Return to search from advanced search causes javascript errors <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-271">BAMPFA-271</a>)</span>
+<ul class="commits">
+<li id="commit_6dca62a" class="ui commit">Fix js errors when returning to advanced search with dynamic term lists.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-35) -->
+<div id="bampfa_4.0-35">
+<h2>Version bampfa_4.0-35 <span class="releasedate">(September 24, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Person: Calculate display name(s) from name parts <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-205">BAMPFA-205</a>)</span>
+<ul class="commits">
+<li id="commit_d04a95f" class="application commit">Configure an app-layer only field for searching on person termDisplayName.</li>
+<li id="commit_8cf1766" class="ui commit">Change person advanced search to use the non-computed termDisplayNameSearch field.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: In title bar, fall back to other number if there is no object number <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-255">BAMPFA-255</a>)</span>
+<ul class="commits">
+<li id="commit_428823a" class="application commit">Configure effectiveObjectNumber and sortableEffectiveObjectNumber fields in collectionobjects_bampfa.</li>
+<li id="commit_b37ba5b" class="ui commit">Add computed, hidden effectiveObjectNumber and sortableEffectiveObjectNumber fields to cataloging record editor.</li>
+</ul>
+</li>
+<li class="issue">
+Add fields to Person <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-265">BAMPFA-265</a>)</span>
+<ul class="commits">
+<li id="commit_12a5b2b" class="application commit">Configure four additional fields in persons_bampfa.</li>
+<li id="commit_dfcfb68" class="ui commit">Add four new fields to person record.</li>
+</ul>
+</li>
+<li class="issue">
+Remove unused fields from advanced search <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-269">BAMPFA-269</a>)</span>
+<ul class="commits">
+<li id="commit_0482593" class="ui commit">Remove unused cataloging fields from advanced search.</li>
+<li id="commit_6412e1e" class="ui commit">Reorder cataloging advanced search fields, and correct some labels.</li>
+<li id="commit_9a51d3f" class="ui commit">Add tenant copy of SearchFieldsTemplate-intake.html.</li>
+<li id="commit_de478f2" class="ui commit">Clean up whitespace.</li>
+<li id="commit_a3f0002" class="ui commit">Remove unused intake fields from advanced search.</li>
+<li id="commit_66a6025" class="ui commit">Reorder intake advanced search fields.</li>
+<li id="commit_20a14a2" class="ui commit">Add tenant copy of SearchFieldsTemplate-movement.html.</li>
+<li id="commit_f0b2153" class="ui commit">Clean up whitespace.</li>
+<li id="commit_48bc4a5" class="ui commit">Reorder movement advanced search fields, and remove unused fields.</li>
+<li id="commit_280458a" class="ui commit">Add tenant copy of SearchFieldsTemplate-person.html.</li>
+<li id="commit_577cfc7" class="ui commit">Reorder person advanced search fields, and remove unused fields.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-34) -->
+<div id="bampfa_4.0-34">
+<h2>Version bampfa_4.0-34 <span class="releasedate">(September 16, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+LMI: Change Reason and Method to dynamic controlled lists <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-264">BAMPFA-264</a>)</span>
+<ul class="commits">
+<li id="commit_10b6517" class="application commit">Configure movereason and movemethod term lists, and tie to reasonForMovend movementMethod fields in movements.</li>
+<li id="commit_ad6fb3d" class="ui commit">Use only the display name part of the refname when computing movement summary.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-33) -->
+<div id="bampfa_4.0-33">
+<h2>Version bampfa_4.0-33 <span class="releasedate">(September 16, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+LMI: Customize like PAHMA <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-259">BAMPFA-259</a>)</span>
+<ul class="commits">
+<li id="commit_5a132db" class="ui commit">Restore accidentally deleted computedSummary field.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-32) -->
+<div id="bampfa_4.0-32">
+<h2>Version bampfa_4.0-32 <span class="releasedate">(September 16, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+LMI: Customize like PAHMA <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-259">BAMPFA-259</a>)</span>
+<ul class="commits">
+<li id="commit_94ccbca" class="application commit">Configure computedSummary field in movements_bampfa.</li>
+<li id="commit_c1c3012" class="ui commit">Customize Movement record to be similar to PAHMA.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-31) -->
+<div id="bampfa_4.0-31">
+<h2>Version bampfa_4.0-31 <span class="releasedate">(September 15, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Add LMI:Crate and Cataloging:Current Crate Location fields <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-258">BAMPFA-258</a>)</span>
+<ul class="commits">
+<li id="commit_b74a0fe" class="services commit">Copy UpdateObjectLocationAndCrateOnMove listener into UCB shared branch, so it can be used by deployments other than pahma.</li>
+<li id="commit_c9c76af" class="services commit">Enable UpdateObjectLocationAndCrateOnMove listener for bampfa tenant.</li>
+<li id="commit_19e7093" class="application commit">Configure crate vocabulary, add computed crate field to collectionobject, and add crate field to movement.</li>
+<li id="commit_ac5b5b3" class="ui commit">Add computed crate field to cataloging records, and add crate field to movements.</li>
+<li id="commit_e9c8395" class="application commit">Add computed current location and comptuted crate to advanced search.</li>
+<li id="commit_acf96a2" class="ui commit">Add computed current location and comptuted crate to advanced search.</li>
+</ul>
+</li>
+<li class="issue">
+Make handler on LMI records are free text field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-262">BAMPFA-262</a>)</span>
+<ul class="commits">
+<li id="commit_905c33b" class="application commit">Remove autocomplete from movement handler.</li>
+</ul>
+</li>
+<li class="issue">
+Update pom.xml files to reference our Artifactory instance before any other maven repos <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/CSPACE-6291">CSPACE-6291</a>)</span>
+<ul class="commits">
+<li id="commit_e285102" class="services commit">Consolidate remaining <repository> references in POMs to the project's top level POM. Move the repository reference to the project Maven repo's 'nuxeo-public' repo earlier, above two references to remote maven.nuxeo.org repos, to help ensure that cached copies of artifacts in the project repo are preferentially downloaded. Replace a non-existent pluginRepository reference."</li>
+</ul>
+</li>
+<li class="issue">
+Update build scripts to support JDBC options in all db urls <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/CSPACE-6404">CSPACE-6404</a>)</span>
+<ul class="commits">
+<li id="commit_77b7e69" class="services commit">Added support for JDBC options throughout the build and configuration files.</li>
+</ul>
+</li>
+<li class="issue">
+Refobjs call with page size 0 hangs <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/CSPACE-6406">CSPACE-6406</a>)</span>
+<ul class="commits">
+<li id="commit_eb15a16" class="services commit">Fix infinite loop in LazyAuthorityRefDocList.java when page size is 0.</li>
+</ul>
+</li>
+<li class="issue">
+Clear Voucher Label Requests batch job only clears 40 vouchers at a time <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/UCBG-383">UCBG-383</a>)</span>
+<ul class="commits">
+<li id="commit_6c1fc85" class="services commit">Retrieve all records in batch job searches, instead of the default 40.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-30) -->
+<div id="bampfa_4.0-30">
+<h2>Version bampfa_4.0-30 <span class="releasedate">(September 11, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging advanced search: Add range search for object number <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-245">BAMPFA-245</a>)</span>
+<ul class="commits">
+<li id="commit_6955657" class="ui commit">Hide computed object number fields on advanced search.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-29) -->
+<div id="bampfa_4.0-29">
+<h2>Version bampfa_4.0-29 <span class="releasedate">(September 11, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Person: Calculate display name(s) from name parts <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-205">BAMPFA-205</a>)</span>
+<ul class="commits">
+<li id="commit_cce1933" class="ui commit">Use primary nationality in person name calculation.</li>
+</ul>
+</li>
+<li class="issue">
+Make title bar dock at the top of the window when scrolling <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-220">BAMPFA-220</a>)</span>
+<ul class="commits">
+<li id="commit_066def5" class="ui commit">Fix title bar background color when title bar docks on admin screen.</li>
+<li id="commit_fe0d67e" class="ui commit">Normalize whitespace.</li>
+<li id="commit_a546305" class="ui commit">Implement title bar docking in defaults.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Add computed sortable object number field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-244">BAMPFA-244</a>)</span>
+<ul class="commits">
+<li id="commit_beb85c9" class="application commit">Add sortableObjectNumber to collectionobjects_bampfa.</li>
+<li id="commit_659b54b" class="ui commit">Add sortable object number to cataloging.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging advanced search: Add range search for object number <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-245">BAMPFA-245</a>)</span>
+<ul class="commits">
+<li id="commit_1c6427d" class="ui commit">Make tenant copy of advancedsearch.html.</li>
+<li id="commit_36afd3a" class="application commit">Add objectNumberRangeSearch field (app-layer only).</li>
+<li id="commit_44b7942" class="ui commit">Add ID Number range search fields to advanced search.</li>
+<li id="commit_f5cb135" class="ui commit">Fix computed fields not being refreshed on advanced search page.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-28) -->
+<div id="bampfa_4.0-28">
+<h2>Version bampfa_4.0-28 <span class="releasedate">(August 28, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Investigate incorporating a javascript rich text editor into the UI <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-210">BAMPFA-210</a>)</span>
+<ul class="commits">
+<li id="commit_15f2c94" class="ui commit">Add /defaults/js/RichTextEditor.js to minification config.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Make cataloger information fields a repeating group <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-222">BAMPFA-222</a>)</span>
+<ul class="commits">
+<li id="commit_2950f8a" class="application commit">Change cataloger info to a repeating group.</li>
+<li id="commit_532fda2" class="ui commit">Change cataloger info to a repeating group, and add a note field.</li>
+</ul>
+</li>
+<li class="issue">
+Make create new from existing copy relations <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-240">BAMPFA-240</a>)</span>
+<ul class="commits">
+<li id="commit_6f91db0" class="ui commit">Enable create new from existing on secondary tabs.</li>
+<li id="commit_d06a021" class="ui commit">Fix errors when autocomplete fields are loaded during create new from existing on secondary tabs.</li>
+</ul>
+</li>
+<li class="issue">
+Configure Person disambiguation pop-up <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-246">BAMPFA-246</a>)</span>
+<ul class="commits">
+<li id="commit_8954cef" class="ui commit">Put nationality in person disambiguation, and remove dates active.</li>
+</ul>
+</li>
+<li class="issue">
+Show disambiguation pop-up when hovering over autocomplete fields <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-247">BAMPFA-247</a>)</span>
+<ul class="commits">
+<li id="commit_639bbd9" class="ui commit">Show disambiguation pop-up when hovering over an autocomplete field with a value.</li>
+<li id="commit_30196cb" class="ui commit">Transfer changes from defaults/js/Demands.js into tenant override.</li>
+</ul>
+</li>
+<li class="issue">
+More changes based on feedback <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-254">BAMPFA-254</a>)</span>
+<ul class="commits">
+<li id="commit_ddf1e29" class="application commit">Add Unknown option to permissionToReproduce, and make default.</li>
+<li id="commit_bc84293" class="ui commit">Hide Date In on cataloging, and move Legal Status and Status Date to its place.</li>
+<li id="commit_ae415fa" class="ui commit">Move Item Count and Description of Work into Detail section.</li>
+<li id="commit_ec8820f" class="ui commit">Hide circa checkbox.</li>
+<li id="commit_3379e1c" class="ui commit">Make tenant copy of MovementTemplate.html.</li>
+<li id="commit_79e0a51" class="ui commit">Normalize whitespace.</li>
+<li id="commit_6fb5755" class="ui commit">Move movement contact field to top section, and rename to Handler.</li>
+<li id="commit_7a1e604" class="ui commit">Relabel Source Address to Address for Agenda.</li>
+<li id="commit_4562b51" class="application commit">Hide Claim, Object Exit, and Acquisition procedures.</li>
+<li id="commit_db22dcc" class="application commit">Add copyrightCredit and copyrightHolder to persons_bampfa.</li>
+<li id="commit_02bd891" class="ui commit">Add copyright credit and copyright holder fields to person record.</li>
+<li id="commit_3e592d4" class="ui commit">Add object production date to cataloging title bar.</li>
+</ul>
+</li>
+<li class="issue">
+Derive structured date values from what is entered in display date <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-79">BAMPFA-79</a>)</span>
+<ul class="commits">
+<li id="commit_9dc9bbd" class="ui commit">Preserve primary setting in structured dates after parsing.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-27) -->
+<div id="bampfa_4.0-27">
+<h2>Version bampfa_4.0-27 <span class="releasedate">(August 18, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Relabel accession number fields and make not required <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-253">BAMPFA-253</a>)</span>
+<ul class="commits">
+<li id="commit_e56f11f" class="ui commit">Relabel Accession Number to ID Number.</li>
+<li id="commit_dfe281b" class="services commit">Add a custom collectionobject validator to allow empty object numbers.</li>
+<li id="commit_9af1ef6" class="ui commit">Make cataloging object number not required in the UI.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-26) -->
+<div id="bampfa_4.0-26">
+<h2>Version bampfa_4.0-26 <span class="releasedate">(August 15, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Configure Person disambiguation pop-up <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-246">BAMPFA-246</a>)</span>
+<ul class="commits">
+<li id="commit_17c7991" class="ui commit">Make tenant copy of Demands.js.</li>
+<li id="commit_7f7f35a" class="ui commit">Configure person disambiguation to include birth date, death date, and birth country.</li>
+<li id="commit_3e40aa5" class="ui commit">Add dates active to person disambiguation pop-up.</li>
+</ul>
+</li>
+<li class="issue">
+Customize Intake screen <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-248">BAMPFA-248</a>)</span>
+<ul class="commits">
+<li id="commit_f22ffe3" class="ui commit">Make tenant copy of IntakeTemplate.html.</li>
+<li id="commit_3df4130" class="ui commit">Normalize whitespace.</li>
+<li id="commit_9fe1906" class="application commit">Configure bampfa intake extension.</li>
+<li id="commit_b74b8b0" class="ui commit">Add Object, Source Address, Receipt, amd Disposition fields to Intake form.</li>
+<li id="commit_b0de846" class="ui commit">Relabel Intake fields.</li>
+<li id="commit_70fb2ee" class="ui commit">Hide unused Intake fields.</li>
+<li id="commit_24b52b9" class="ui commit">Move Intake Current Location group to top section, and remove Location section since it is now empty.</li>
+<li id="commit_038787e" class="ui commit">Make all Intake sections except for the first initially collapsed.</li>
+<li id="commit_68aed96" class="application commit">Tie Intake entryReason to a new dynamic term list, vocab-intakepurpose.</li>
+</ul>
+</li>
+<li class="issue">
+Reorganize cataloging form based on feedback <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-250">BAMPFA-250</a>)</span>
+<ul class="commits">
+<li id="commit_3317f55" class="ui commit">Reorganize Cataloging Object Identification Information section.</li>
+<li id="commit_b120649" class="ui commit">Reorganize Cataloging Detail section.</li>
+<li id="commit_9bd1ce0" class="ui commit">Reorganize Cataloging Object Description Information section.</li>
+<li id="commit_5444aa8" class="ui commit">Reorganize Cataloging Item-Specific Acquisition Information. Also move Medium to top section, since it's part of the tombstone info.</li>
+<li id="commit_fee3406" class="ui commit">Move Cataloging Classification section below Item-Specific Acquisition Information section.</li>
+<li id="commit_ae0a487" class="ui commit">Delete commented-out markup.</li>
+</ul>
+</li>
+<li class="issue">
+Make dimension summary calculation work for measurements in centimeters <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-251">BAMPFA-251</a>)</span>
+<ul class="commits">
+<li id="commit_33983c2" class="ui commit">Include measurements in centimeters in dimension summary.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-25) -->
+<div id="bampfa_4.0-25">
+<h2>Version bampfa_4.0-25 <span class="releasedate">(July 31, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Investigate incorporating a javascript rich text editor into the UI <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-210">BAMPFA-210</a>)</span>
+<ul class="commits">
+<li id="commit_73bfd27" class="ui commit">Rename a misnamed function.</li>
+</ul>
+</li>
+<li class="issue">
+Make create new from existing copy relations <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-240">BAMPFA-240</a>)</span>
+<ul class="commits">
+<li id="commit_8252383" class="ui commit">Enable create new from existing on secondary tabs.</li>
+<li id="commit_b4bccc7" class="ui commit">Fix errors when autocomplete fields are loaded during create new from existing on secondary tabs.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_3e3283f" class="ui commit">Correct a comment in releaseNotes.html, so that it can be located by the make-release script.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-24) -->
+<div id="bampfa_4.0-24">
+<h2>Version bampfa_4.0-24 <span class="releasedate">(July 30, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Add Captain, Mr., Mrs., and Rev. as options to person Title <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-241">BAMPFA-241</a>)</span>
+<ul class="commits">
+<li id="commit_91153ba" class="application commit">Change person title options. Add a dot to all abbreviations, and add 'Captain' and 'Rev.'</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- generated_release_notes(bampfa_4.0-23) -->
+<div id="bampfa_4.0-23">
+<h2>Version bampfa_4.0-23 <span class="releasedate">(July 28, 2014)</span></h2>
+<p class="auto-generation warning">These release notes were automatically generated, and have not been edited. Please contact <a href="mailto:cspace-support@lists.berkeley.edu">cspace-support@lists.berkeley.edu</a> if you have questions about this release.</p>
+<p class="description">This release of CollectionSpace addresses the following issues:</p>
+<ul class="issues">
+<li class="issue">
+Cataloging: Implement accession number calculation <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-166">BAMPFA-166</a>)</span>
+<ul class="commits">
+<li id="commit_3234f8d" class="ui commit">Fix a minor bug in accession number calculation, which could have caused an error if a part was null.</li>
+</ul>
+</li>
+<li class="issue">
+Person: Calculate display name(s) from name parts <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-205">BAMPFA-205</a>)</span>
+<ul class="commits">
+<li id="commit_c5c900c" class="application commit">Configure person termDisplayName and termName to be computed.</li>
+<li id="commit_7dc1932" class="ui commit">Add LFM and FML name computation functions.</li>
+</ul>
+</li>
+<li class="issue">
+Cataloging: Add subjectTheme field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-219">BAMPFA-219</a>)</span>
+<ul class="commits">
+<li id="commit_97e5778" class="application commit">Add new values from FileMaker to the subjects and themes vocabulary.</li>
+</ul>
+</li>
+<li class="issue">
+Person: Relabel "Place of Birth" to "Birth Country" <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-236">BAMPFA-236</a>)</span>
+<ul class="commits">
+<li id="commit_5fca7e0" class="ui commit">Relabel person 'Place of Birth' to 'Birth Country'.</li>
+</ul>
+</li>
+<li class="issue">
+Person: Add "Birth City" field <span class="issuenumber">(<a href="http://issues.collectionspace.org/browse/BAMPFA-237">BAMPFA-237</a>)</span>
+<ul class="commits">
+<li id="commit_d8385f9" class="application commit">Add birth city field to persons_bampfa schema.</li>
+<li id="commit_55add1a" class="ui commit">Add birth city field to person record.</li>
+</ul>
+</li>
+<li class="issue">
+Other changes
+<ul class="commits">
+<li id="commit_41cb192" class="ui commit">Add release notes page.</li>
+<li id="commit_68c25ed" class="ui commit">Copy changes from defaults into tenant files.</li>
+<li id="commit_3dff54f" class="ui commit">Make tenant copy of releaseNotes.html.</li>
+<li id="commit_c09ff04" class="ui commit">Update version number in release notes.</li>
+<li id="commit_428b893" class="ui commit">Update version number in release notes.</li>
+</ul>
+</li>
+</ul>
+</div>
+		<!-- generated_release_notes(bampfa_4.0-22) -->
+	</body>
+</html>

@@ -249,6 +249,23 @@
           </execution>
           -->
           <execution>
+            <id>integration-test-bampfa</id>
+            <goals>
+              <goal>integration-test</goal>
+            </goals>
+            <configuration>
+              <excludes>
+                <exclude>**/TaxonIT.java</exclude>
+              </excludes>
+              <systemPropertyVariables>
+                <tenantName>bampfa</tenantName>
+                <user>admin@bampfa.cspace.berkeley.edu</user>
+              </systemPropertyVariables>
+              <reportsDirectory>target/failsafe-reports/bampfa</reportsDirectory>
+              <summaryFile>target/failsafe-reports/bampfa/failsafe-summary.xml</summaryFile>
+            </configuration>
+          </execution>
+          <execution>
             <id>verify</id>
             <goals>
               <goal>verify</goal>
@@ -259,6 +276,7 @@
                 <summaryFile>target/failsafe-reports/core/failsafe-summary.xml</summaryFile>
                 <summaryFile>target/failsafe-reports/lifesci/failsafe-summary.xml</summaryFile>
                 -->
+                <summaryFile>target/failsafe-reports/bampfa/failsafe-summary.xml</summaryFile>
               </summaryFiles>
             </configuration>
           </execution>

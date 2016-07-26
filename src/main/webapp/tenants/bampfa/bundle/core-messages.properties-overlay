@@ -1,0 +1,207 @@
+# Login page
+login-deployment: Version bampfa_4.1-20
+login-login-info: To view the CollectionSpace BAM/PFA tenant, use the login box on the right with the login: 
+login-login: admin@bampfa.cspace.berkeley.edu
+login-login-pwd: 
+login-login-pwdValue: 
+login-rologin-info: There is also a read-only account: 
+login-rologin: reader@bampfa.cspace.berkeley.edu
+login-rologin-pwd: 
+login-rologin-pwdValue: 
+
+# Vocabularies
+vocab-collective: Artists Collectives
+vocab-crate: Crates
+
+# Search
+search-artist: Artist
+
+# Cataloging
+collection-object-objectNumberLabel: ID Number
+cataloging-identificationNumberRequired: Please specify at least one ID Number Information field.
+cataloging-number: Number
+collection-object-accNumberInformationLabel: ID Number Information
+collection-object-accNumberPrefixLabel: Prefix
+collection-object-accNumberPart1Label: Year
+collection-object-accNumberPart2Label: Gift
+collection-object-accNumberPart3Label: Gift
+collection-object-accNumberPart4Label: Gift
+collection-object-accNumberPart5Label: Alpha
+collection-object-objectNumberSearchLabel: ID Number
+collection-object-bampfaCollectionLabel: Collection
+collection-object-briefDescriptionsLabel: Description of Work
+collection-object-commentsLabel: Notes
+collection-object-catalogerInformationLabel: Cataloger Information
+collection-object-catalogerGroupLabel: Cataloger Information
+collection-object-catalogerNameLabel: Cataloger Name
+collection-object-catalogDateLabel: Date
+collection-object-catalogNoteLabel: Note
+collection-object-conditionCheckInformationLabel: Condition/Conservation Information
+collection-object-bampfaConditionCheckGroupLabel: Condition Check
+collection-object-conditionNoteLabel: Condition Note
+collection-object-conservationNoteLabel: Conservation Note
+collection-object-conditionCheckByLabel: Checked By
+collection-object-conditionCheckDateLabel: Date
+collection-object-itemClassLabel: Item Class
+collection-object-copyrightInformationLabel: Copyright Information
+collection-object-copyrightCreditLabel: Copyright Credit
+collection-object-copyrightHolderLabel: Copyright Holder
+collection-object-copyrightNoteLabel: Copyright Note
+collection-object-photoCreditLabel: Photo Credit
+collection-object-permissionToReproduceLabel: Permission to reproduce granted for noncommercial uses
+collection-object-bwOrColorLabel: Black & White or Color
+collection-object-objectProductionDateCircaLabel: Circa
+collection-object-objectProductionDateCenturyLabel: Century
+collection-object-objectProductionDateEraLabel: Era
+collection-object-objectProductionDynastyLabel: Dynasty
+collection-object-editionNumberLabel: Edition
+collection-object-bampfaObjectProductionPersonGroupLabel: Artist or Maker
+collection-object-bampfaObjectProductionPersonLabel: Artist or Maker
+collection-object-bampfaObjectProductionPersonRoleLabel: Role
+collection-object-bampfaObjectProductionPersonQualifierLabel: Qualifier
+collection-object-stylesLabel: Period/Style
+collection-object-styleLabel: Period/Style
+collection-object-soundOrSilentLabel: Sound or Silent
+collection-object-stateGenerationLabel: State/Generation
+collection-object-acquisitionInformationLabel: Item-Specific Acquisition Information
+collection-object-accessionDateGroupLabel: Date In
+collection-object-legalStatusLabel: Legal Status
+collection-object-legalStatusDateGroupLabel: Status Date
+collection-object-acquisitionMethodLabel: Acquisition Method
+collection-object-acquisitionSourceLabel: Source
+collection-object-creditLineLabel: Credit Line
+collection-object-bampfaAcquisitionReasonLabel: For
+collection-object-acquisitionNoteLabel: Acquisition Note
+collection-object-acquisitionProvisosLabel: Acquisition Terms
+collection-object-appraisalInfoLabel: Appraisal Info
+collection-object-provenanceLabel: Provenance
+collection-object-currentValueGroupLabel: Current Value
+collection-object-currentValueLabel: Value
+collection-object-currentValueSourceLabel: Source
+collection-object-initialValueGroupLabel: Initial Value
+collection-object-initialValueLabel: Value
+collection-object-initialValueSourceLabel: Source
+collection-object-initialValueDateGroupLabel: Date
+collection-object-physicalDescriptionLabel: Medium
+collection-object-numberOfScansLabel: Number of Scans
+collection-object-otherNumberGroupLabel: T.R. / Other Numbers
+collection-object-otherNumberLabel: T.R. / Other Number
+collection-object-numberValueLabel: T.R. / Other Number
+collection-object-titleLanguageLabel: Language
+collection-object-objectProductionPersonLabel: Artist or Maker
+collection-object-objectProductionPeopleGroupLabel: Production Organization 
+collection-object-objectProductionPeopleLabel: Production Organization
+collection-object-objectProductionInformationLabel: Detail
+collection-object-classificationInformationLabel: Classification
+collection-object-numberOfObjectsLabel: Item Count
+collection-object-noteInformationLabel: Notes
+collection-object-subjectThemeLabel: Subject/Theme
+collection-object-bampfaTitleGroupLabel: Title
+collection-object-bampfaTitleSearchLabel: Title
+collection-object-objectNumberRangeSearchLabel: ID Number (Range)
+collection-object-objectNumberRangeSearchStartLabel: From
+collection-object-objectNumberRangeSearchEndLabel: To
+collection-object-computedCrateLabel: Current Box or Container
+collection-object-computedCrateSearchLabel: Current Box or Container
+collection-object-computedCurrentLocationLabel: Current Storage Location
+collection-object-computedCurrentLocationSearchLabel: Current Storage Location
+collection-object-objectProductionPlaceLabel: Production Place
+collection-object-acquisitionDateGroupLabel: Acquisition Date
+collection-object-acquisitionDateGroupStartLabel: Earliest
+collection-object-acquisitionDateGroupEndLabel: Latest
+collection-object-seriesTitleLabel: Series Title
+collection-object-partOfLabel: Part Of
+collection-object-collectionTextInformationLabel: Collection Text Information
+collection-object-collectionTextGroupLabel: Text / Label
+collection-object-collectionTextTypeLabel: Type
+collection-object-collectionTextDoNotPublishLabel: Do Not Publish
+collection-object-collectionTextLabel: Text
+collection-object-collectionTextAuthorLabel: Author
+collectionTextGroup-collectionTextDateGroupLabel: Date
+collection-object-collectionTextNoteLabel: Notes
+collection-object-assocPlaceGroupLabel: Site
+collection-object-assocPlaceLabel: Site
+collection-object-artistDisplayOverrideLabel: Artist Display Override
+
+# Dimension
+dimension-dimensionNoteLabel: Measurement Note
+dimension-measuredPartNoteLabel: Note
+
+# Acquisition
+acquisition-accessionDateGroupLabel: Date In
+acquisition-acquisitionProvisosLabel: Acquisition Terms
+acquisition-legalStatusLabel: Legal Status
+acquisition-legalStatusDateGroupLabel: Status Date
+acquisition-bampfaAcquisitionReasonLabel: For
+acquisition-appraisalInfoLabel: Appraisal Info
+acquisition-currentValueGroupLabel: Current Value
+acquisition-currentValueLabel: Value
+acquisition-currentValueSourceLabel: Source
+currentValueGroup-currentValueDateGroupLabel: Date
+acquisition-initialValueGroupLabel: Initial Value
+acquisition-initialValueLabel: Value
+acquisition-initialValueSourceLabel: Source
+acquisition-initialValueDateGroupLabel: Date
+
+# Intake
+intake-intakeObjectLabel: Object (Artist/Title/Medium)
+intake-sourceAddressLabel: Address for Agenda
+intake-receiptLabel: Receipt
+intake-dispositionLabel: Disposition
+intake-entryNumberLabel: TR Number
+intake-identificationNumberRequired: Please specify a TR Number
+intake-entryDateLabel: Date In
+intake-entryReasonLabel: Purpose
+intake-entryNoteLabel: Intake Note
+intake-currentOwnerLabel: Source
+
+# Person
+person-datesActiveLabel: Dates Active
+preferredPA-termQualifierLabel: Term Qualifier
+preferredPA-termNameLabel: FML Name
+person-birthPlaceLabel: Birth Country
+person-birthCityLabel: Birth City
+person-miniView-field1Label: Nationality:
+person-miniView-field2Label: Birth Country:
+person-miniView-field3Label: Birth Date:
+person-miniView-field4Label: Death Date:
+person-copyrightInformationLabel: Copyright Information
+person-copyrightCreditLabel: Copyright Credit
+person-copyrightHolderLabel: Copyright Holder
+person-copyrightNoteLabel: Copyright Note
+person-permissionToReproduceLabel: Permission to reproduce granted for noncommercial uses
+person-otherRegionalInfoLabel: Other Regional Info
+person-dynastyPeriodLabel: Dynasty/Period
+preferredPA-termDisplayNameSearchLabel: Display Name
+person-identificationNumberRequired: Display Name is empty. Please enter a Forename, Middle Name, or Surname to generate a Display Name.
+
+# Movement
+movement-tab: Inv/Mov...
+movement-editRecord: Edit Inventory/Movement Record
+movement-recordList: Related Inventory/Movement Records
+movement: Inventory/Movement
+movement-locationMovementInformationLabel: Inventory/Movement Information
+movement-currentLocationLabel: Storage Location
+movement-currentLocationMISSINGLabel: Storage Location
+movement-currentLocationHeaderLabel: Storage Location
+movement-identificationNumberRequired: Please specify a Storage Location
+movement-locationDateLabel: Inventory/Move Date
+movement-reasonForMoveLabel: Reason
+movement-movementContactLabel: Handler
+movement-crateLabel: Box or Container
+
+# Media
+media-imageNumberLabel: Image Number
+media-imageNumberStartLabel: From
+media-imageNumberEndLabel: To
+media-number: Image Number
+media-identificationNumberRequired: Please specify an Image Number
+media-titleSearchLabel: File name
+media-primaryDisplayLabel: Primary Display
+media-computedOrderNumberLabel: Computed Order Number
+media-websiteDisplayLevelLabel: Website Display Level
+
+# Search
+# For cataloging records, "ID Number" refers to specifically to objectNumber, but in search results, the number column could contain
+# otherNumber if there is no objectNumber. To prevent confusion, don't label the column "ID Number".
+search-number: Number
